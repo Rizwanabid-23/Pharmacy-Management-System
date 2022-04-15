@@ -32,21 +32,22 @@ namespace Multicare_pharmacy
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admins));
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeEmployeeInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.addProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uc_addemployee1 = new Multicare_pharmacy.uc_addemployee();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,18 +80,34 @@ namespace Multicare_pharmacy
             this.addProductsToolStripMenuItem,
             this.editProductsToolStripMenuItem,
             this.removeProductsToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem6,
             this.toolStripMenuItem7,
+            this.toolStripMenuItem6,
+            this.toolStripMenuItem3,
             this.toolStripMenuItem8,
             this.toolStripMenuItem2,
             this.signOutToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(181, 358);
+            this.menuStrip1.Size = new System.Drawing.Size(181, 366);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Enabled = false;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(168, 19);
+            this.toolStripMenuItem4.Text = " ";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 24);
+            this.toolStripMenuItem1.Text = " ";
             // 
             // addEmployeeToolStripMenuItem
             // 
@@ -99,6 +116,7 @@ namespace Multicare_pharmacy
             this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
             this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.addEmployeeToolStripMenuItem.Text = "Add employee";
+            this.addEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addEmployeeToolStripMenuItem_Click);
             // 
             // changeEmployeeInfoToolStripMenuItem
             // 
@@ -116,14 +134,12 @@ namespace Multicare_pharmacy
             this.removeEmployeeToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.removeEmployeeToolStripMenuItem.Text = "Remove employee";
             // 
-            // toolStripMenuItem1
+            // toolStripMenuItem5
             // 
-            this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.toolStripMenuItem1.Enabled = false;
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 24);
-            this.toolStripMenuItem1.Text = " ";
+            this.toolStripMenuItem5.Enabled = false;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(168, 19);
+            this.toolStripMenuItem5.Text = " ";
             // 
             // addProductsToolStripMenuItem
             // 
@@ -149,43 +165,12 @@ namespace Multicare_pharmacy
             this.removeProductsToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
             this.removeProductsToolStripMenuItem.Text = "Remove products";
             // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.toolStripMenuItem2.Enabled = false;
-            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 24);
-            this.toolStripMenuItem2.Text = " ";
-            // 
-            // signOutToolStripMenuItem
-            // 
-            this.signOutToolStripMenuItem.BackColor = System.Drawing.Color.Azure;
-            this.signOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.signOutToolStripMenuItem.Text = "Sign out";
-            // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Enabled = false;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(168, 19);
             this.toolStripMenuItem3.Text = " ";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Enabled = false;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(168, 19);
-            this.toolStripMenuItem4.Text = " ";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Enabled = false;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(168, 19);
-            this.toolStripMenuItem5.Text = " ";
             // 
             // toolStripMenuItem6
             // 
@@ -208,11 +193,38 @@ namespace Multicare_pharmacy
             this.toolStripMenuItem8.Size = new System.Drawing.Size(168, 19);
             this.toolStripMenuItem8.Text = " ";
             // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.toolStripMenuItem2.Enabled = false;
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 24);
+            this.toolStripMenuItem2.Text = " ";
+            // 
+            // signOutToolStripMenuItem
+            // 
+            this.signOutToolStripMenuItem.BackColor = System.Drawing.Color.Azure;
+            this.signOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.signOutToolStripMenuItem.Text = "Sign out";
+            // 
+            // uc_addemployee1
+            // 
+            this.uc_addemployee1.BackColor = System.Drawing.SystemColors.Window;
+            this.uc_addemployee1.Location = new System.Drawing.Point(184, 0);
+            this.uc_addemployee1.Name = "uc_addemployee1";
+            this.uc_addemployee1.Size = new System.Drawing.Size(647, 366);
+            this.uc_addemployee1.TabIndex = 5;
+            this.uc_addemployee1.Load += new System.EventHandler(this.uc_addemployee1_Load);
+            // 
             // admins
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 358);
+            this.ClientSize = new System.Drawing.Size(829, 366);
+            this.Controls.Add(this.uc_addemployee1);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "admins";
@@ -244,5 +256,6 @@ namespace Multicare_pharmacy
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private uc_addemployee uc_addemployee1;
     }
 }

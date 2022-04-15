@@ -3,7 +3,6 @@ D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Multicare_pharmacy.exe
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Multicare_pharmacy.pdb
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
-D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.csproj.AssemblyReference.cache
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.loginForm.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.Properties.Resources.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.csproj.GenerateResource.cache
@@ -17,3 +16,7 @@ D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.Bunifu
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.admins.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.employee.resources
+D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.uc_addemployee.resources
+D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.csproj.AssemblyReference.cache
