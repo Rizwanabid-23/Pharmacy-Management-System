@@ -37,6 +37,8 @@ namespace Multicare_pharmacy
 
                     employee employee = new employee();
                     employee.Show();
+                    Sales sales = new Sales();
+                    sales.Show();
                 }
                 else
                 {
