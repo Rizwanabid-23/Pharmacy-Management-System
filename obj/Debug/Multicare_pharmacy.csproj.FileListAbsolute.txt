@@ -25,7 +25,6 @@ D:\Softwares\GitRepos\dbfinalgid-10\bin\Debug\Multicare_pharmacy.exe
 D:\Softwares\GitRepos\dbfinalgid-10\bin\Debug\Multicare_pharmacy.pdb
 D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.csproj.AssemblyReference.cache
 D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.admins.resources
-D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.employee.resources
 D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.loginForm.resources
 D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.Properties.Resources.resources
 D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.Sales.resources

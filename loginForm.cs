@@ -26,17 +26,14 @@ namespace Multicare_pharmacy
                 string username = textBox1.Text;
                 string pin = textBox2.Text;
                 string check = checker(username, pin);
-                if( check== "admin")
+                if (check == "admin")
                 {
-                        admins admin = new admins();
-                        admin.Show();
-                        this.Hide();   
+                    admins admin = new admins();
+                    admin.Show();
+                    this.Hide();
                 }
-                else if(check=="employee")
+                else if (check == "employee")
                 {
-
-                    employee employee = new employee();
-                    employee.Show();
                     Sales sales = new Sales();
                     sales.Show();
                 }
@@ -52,11 +49,11 @@ namespace Multicare_pharmacy
                 MessageBox.Show("Error occured while logging in. Try again");
             }
         }
-        private string checker(string uname,string pin)
+        private string checker(string uname, string pin)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(local);Initial Catalog=MultiCarePharmacy;Integrated Security=True");
 
-            SqlDataAdapter cmd = new SqlDataAdapter("select count(*) from Admin where Username='"+uname+"' and PIN='"+pin+"'",con);
+            SqlDataAdapter cmd = new SqlDataAdapter("select count(*) from Admin where Username='" + uname + "' and PIN='" + pin + "'", con);
 
             DataTable dt = new DataTable();
             cmd.Fill(dt);
@@ -77,7 +74,6 @@ namespace Multicare_pharmacy
                     return "employee";
                 }
             }
-
             return "false";
 
         }

@@ -81,12 +81,6 @@
       <DependentUpon>admins.cs</DependentUpon>
     </Compile>
     <Compile Include="Configuration.cs" />
-    <Compile Include="employee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="employee.Designer.cs">
-      <DependentUpon>employee.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\SalesPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,9 +114,6 @@
     </Compile>
     <EmbeddedResource Include="admins.resx">
       <DependentUpon>admins.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="employee.resx">
-      <DependentUpon>employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SalesPanel.resx">
       <DependentUpon>SalesPanel.cs</DependentUpon>

@@ -21,13 +21,9 @@ namespace Multicare_pharmacy
 
         private void admins_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Supplier' table. You can move, or remove it, as needed.
-            this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
+            //this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
             listpanel.Add(panel1);
             listpanel.Add(panel2);
-
-
-
             listpanel[1].Show();
             listpanel[1].BringToFront();
         }
@@ -47,7 +43,7 @@ namespace Multicare_pharmacy
             }
         }
 
-      
+
         private void bunifuButton2_Click_1(object sender, EventArgs e)
         {
             foreach (var c in panel1.Controls)
@@ -83,7 +79,7 @@ namespace Multicare_pharmacy
                 {
                     ((TextBox)c).Text = String.Empty;
                 }
-                if(c is ComboBox)
+                if (c is ComboBox)
                 {
                     ((ComboBox)c).Text = string.Empty;
                 }
@@ -102,9 +98,7 @@ namespace Multicare_pharmacy
             string phone = textBox8.Text;
             string email = textBox9.Text;
 
-
             var con = Configuration.getInstance().getConnection();
-
             SqlCommand cmd = new SqlCommand("Insert into Employee values (@ID,@Username,@PIN,@FirstName,@LastName,@CNIC,@Address,@Phone,@Email)", con);
             cmd.Parameters.AddWithValue("@ID", id);
             cmd.Parameters.AddWithValue("@Username", uname);
@@ -117,9 +111,6 @@ namespace Multicare_pharmacy
             cmd.Parameters.AddWithValue("@Email", email);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Successfully saved");
-
-
-
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
@@ -135,7 +126,7 @@ namespace Multicare_pharmacy
             float pprice = float.Parse(textBox12.Text);
             DateTime mfg = Convert.ToDateTime(bunifuDatePicker1.Text);
             DateTime exp = Convert.ToDateTime(bunifuDatePicker2.Text);
-            
+
             if (textBox16.Text != "")
             {
                 potency = float.Parse(textBox16.Text);
@@ -145,15 +136,15 @@ namespace Multicare_pharmacy
             if (comboBox2.Text != "")
             {
                 legality = comboBox2.Text;
-                if(legality=="Allowed")
+                if (legality == "Allowed")
                 {
                     leg = 3;
                 }
-                else if(legality=="Not Allowed")
+                else if (legality == "Not Allowed")
                 {
                     leg = 4;
                 }
-                
+
             }
 
             float nop = float.Parse(textBox13.Text);
@@ -175,7 +166,6 @@ namespace Multicare_pharmacy
 
 
             var con = Configuration.getInstance().getConnection();
-
             SqlCommand cmd = new SqlCommand("Insert into Product values (@ProductName,@SalePrice,@PurchasePrice,@Category,@ManufacturingDate,@ExpiryDate,@Packs,@QuantityPerPack,@Legality,@Potency,@Discount)", con);
             cmd.Parameters.AddWithValue("@ProductName", name);
             cmd.Parameters.AddWithValue("@SalePrice", sprice);
@@ -190,7 +180,6 @@ namespace Multicare_pharmacy
             cmd.Parameters.AddWithValue("@Discount", discount);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Successfully saved");
-
         }
     }
 }
