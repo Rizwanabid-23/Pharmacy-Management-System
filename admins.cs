@@ -21,26 +21,24 @@ namespace Multicare_pharmacy
 
         private void admins_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Product' table. You can move, or remove it, as needed.
+            this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
+            // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Employee' table. You can move, or remove it, as needed.
+            this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
             //this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
             listpanel.Add(panel1);
             listpanel.Add(panel2);
+            listpanel.Add(panel3);
+            listpanel.Add(panel4);
+            listpanel.Add(panel5);
+
             listpanel[1].Show();
             listpanel[1].BringToFront();
         }
 
         private void addEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < listpanel.Count; i++)
-            {
-                if (listpanel[i].Name == "panel1")
-                {
-                    listpanel[i].Show();
-                }
-                else
-                {
-                    listpanel[i].Hide();
-                }
-            }
+
         }
 
 
@@ -180,6 +178,93 @@ namespace Multicare_pharmacy
             cmd.Parameters.AddWithValue("@Discount", discount);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Successfully saved");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginForm loginForm = new loginForm();
+            loginForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel1")
+                {
+                    listpanel[i].Show();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel2")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel3")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel4")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel5")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
         }
     }
 }

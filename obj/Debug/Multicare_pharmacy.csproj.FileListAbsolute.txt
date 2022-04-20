@@ -15,7 +15,6 @@ D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.Bunifu
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.admins.resources
-D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.employee.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.uc_addemployee.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
@@ -41,7 +40,6 @@ C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\bin\Debug\Multicare_pharmacy.exe
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\bin\Debug\Multicare_pharmacy.pdb
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.csproj.AssemblyReference.cache
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.admins.resources
-C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.employee.resources
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.Forms.SalesPanel.resources
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.loginForm.resources
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.Properties.Resources.resources
@@ -53,3 +51,6 @@ C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.cspro
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.csproj.CopyComplete
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.exe
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.pdb
+C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.csproj.SuggestedBindingRedirects.cache
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.Forms.SalesPanel.resources
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.Sales.resources
