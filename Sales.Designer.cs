@@ -30,9 +30,9 @@ namespace Multicare_pharmacy
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sales));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tab01 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tab02 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tab03 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -62,11 +62,11 @@ namespace Multicare_pharmacy
             this.tab01.ColorContrastOnClick = 45;
             this.tab01.ColorContrastOnHover = 45;
             this.tab01.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.tab01.CustomizableEdges = borderEdges4;
+            borderEdges31.BottomLeft = true;
+            borderEdges31.BottomRight = true;
+            borderEdges31.TopLeft = true;
+            borderEdges31.TopRight = true;
+            this.tab01.CustomizableEdges = borderEdges31;
             this.tab01.DialogResult = System.Windows.Forms.DialogResult.None;
             this.tab01.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.tab01.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -153,11 +153,11 @@ namespace Multicare_pharmacy
             this.tab02.ColorContrastOnClick = 45;
             this.tab02.ColorContrastOnHover = 45;
             this.tab02.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.tab02.CustomizableEdges = borderEdges5;
+            borderEdges32.BottomLeft = true;
+            borderEdges32.BottomRight = true;
+            borderEdges32.TopLeft = true;
+            borderEdges32.TopRight = true;
+            this.tab02.CustomizableEdges = borderEdges32;
             this.tab02.DialogResult = System.Windows.Forms.DialogResult.None;
             this.tab02.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.tab02.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -244,11 +244,11 @@ namespace Multicare_pharmacy
             this.tab03.ColorContrastOnClick = 45;
             this.tab03.ColorContrastOnHover = 45;
             this.tab03.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.tab03.CustomizableEdges = borderEdges6;
+            borderEdges33.BottomLeft = true;
+            borderEdges33.BottomRight = true;
+            borderEdges33.TopLeft = true;
+            borderEdges33.TopRight = true;
+            this.tab03.CustomizableEdges = borderEdges33;
             this.tab03.DialogResult = System.Windows.Forms.DialogResult.None;
             this.tab03.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.tab03.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -328,7 +328,7 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.33787F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.66213F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(838, 441);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(838, 535);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -350,9 +350,9 @@ namespace Multicare_pharmacy
             // 
             // mainContentPanel
             // 
-            this.mainContentPanel.Location = new System.Drawing.Point(3, 53);
+            this.mainContentPanel.Location = new System.Drawing.Point(3, 63);
             this.mainContentPanel.Name = "mainContentPanel";
-            this.mainContentPanel.Size = new System.Drawing.Size(832, 385);
+            this.mainContentPanel.Size = new System.Drawing.Size(832, 469);
             this.mainContentPanel.TabIndex = 1;
             // 
             // Sales
@@ -360,7 +360,7 @@ namespace Multicare_pharmacy
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(829, 437);
+            this.ClientSize = new System.Drawing.Size(829, 548);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Sales";
             this.Text = "Sales";
