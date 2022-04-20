@@ -6,10 +6,12 @@ namespace Multicare_pharmacy.Forms
 {
     public partial class SalesPanel : Form
     {
-        public SalesPanel(string sessionCode)
+        public SalesPanel(string sessionCode, string EID, string EName)
         {
             InitializeComponent();
             this.sessionCode.Text = sessionCode;
+            this.employeeID.Text = EID;
+            this.employeeName.Text = EName;
             tabQuantity.Enabled = false;
         }
 

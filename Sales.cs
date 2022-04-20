@@ -12,13 +12,16 @@ namespace Multicare_pharmacy
 {
     public partial class Sales : Form
     {
-        Forms.SalesPanel screen01 = new Forms.SalesPanel("Session 01");
-        Forms.SalesPanel screen02 = new Forms.SalesPanel("Session 02");
-        Forms.SalesPanel screen03 = new Forms.SalesPanel("Session 03");
+        Forms.SalesPanel screen01;
+        Forms.SalesPanel screen02;
+        Forms.SalesPanel screen03;
         private Form currentPanel;
-        public Sales()
+        public Sales(string EID, string EName)
         {
             InitializeComponent();
+            screen01 = new Forms.SalesPanel("Session 01", EID, EName);
+            screen02 = new Forms.SalesPanel("Session 02", EID, EName);
+            screen03 = new Forms.SalesPanel("Session 03", EID, EName);
         }
 
         private void openNextPanel(Form nextPanel, object sender)
