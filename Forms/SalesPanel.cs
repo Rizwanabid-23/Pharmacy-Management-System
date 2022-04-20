@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Bunifu.UI.WinForms;
+using System;
 using System.Windows.Forms;
 
 namespace Multicare_pharmacy.Forms
@@ -16,21 +10,44 @@ namespace Multicare_pharmacy.Forms
         {
             InitializeComponent();
             this.sessionCode.Text = sessionCode;
-            TabQuantity.Enabled = false;
+            tabQuantity.Enabled = false;
         }
 
         private void TabQuan_CheckedChanged(object sender, EventArgs e)
         {
-            if (TabQuan.Checked)
+            if (tabQuanCb.Checked)
             {
-                Packs.Enabled = false;
-                TabQuantity.Enabled = true;
+                packs.Enabled = false;
+                packs.Text = String.Empty;
+                tabQuantity.Enabled = true;
             }
             else
             {
-                Packs.Enabled = true;
-                TabQuantity.Enabled = false;
+                packs.Enabled = true;
+                tabQuantity.Text = String.Empty;
+                tabQuantity.Enabled = false;
             }
+        }
+
+        private void generateBillBTN_Click(object sender, EventArgs e)
+        {
+            clearFields();
+        }
+
+        private void clearFields()
+        {
+            productID.Text = String.Empty;
+            packs.Text = String.Empty;
+            tabQuantity.Text = String.Empty;
+            amountRecieved.Text = String.Empty;
+            tabQuanCb.Checked = false;
+            cardRB.Checked = false;
+            cashRB.Checked = false;
+            CID.Text = String.Empty;
+            CName.Text = String.Empty;
+            CAddress.Text = String.Empty;
+            grandTotal.Text = "Grand Total:";
+            totalProducts.Text = "Total Products";
         }
     }
 }
