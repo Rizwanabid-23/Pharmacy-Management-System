@@ -22,9 +22,9 @@ namespace Multicare_pharmacy
         private void admins_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Product' table. You can move, or remove it, as needed.
-            this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
+            //this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
             // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Employee' table. You can move, or remove it, as needed.
-            this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
+            //this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
             //this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
             listpanel.Add(panel1);
             listpanel.Add(panel2);
@@ -182,7 +182,7 @@ namespace Multicare_pharmacy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             loginForm loginForm = new loginForm();
             loginForm.Show();
         }

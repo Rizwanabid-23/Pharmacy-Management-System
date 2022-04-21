@@ -47,6 +47,7 @@ namespace Multicare_pharmacy
             {
                 MessageBox.Show("Error occured while logging in. Try again");
             }
+            clearFields();
         }
         private List<string> checker(string uname, string pin)
         {
@@ -71,7 +72,7 @@ namespace Multicare_pharmacy
                 DataTable dt1 = new DataTable();
                 cmd1.Fill(dt1);
 
-                if (dt1.Rows[0][0].ToString() == "1")
+                if (dt1.Rows.Count == 1)
                 {
                     DataRow dataRow = dt1.Rows[0];
                     credentials.Add("employee");
@@ -84,6 +85,12 @@ namespace Multicare_pharmacy
             credentials.Add("null");
             credentials.Add("null");
             return credentials;
+        }
+
+        public void clearFields()
+        {
+            this.textBox1.Text = String.Empty;
+            this.textBox2.Text = String.Empty;
         }
     }
 }

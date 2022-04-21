@@ -54,3 +54,4 @@ C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.pdb
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\obj\Debug\Multicare_pharmacy.csproj.SuggestedBindingRedirects.cache
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.Forms.SalesPanel.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.Sales.resources
+D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.Forms.AddCustomer.resources

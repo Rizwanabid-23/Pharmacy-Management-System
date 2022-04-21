@@ -30,9 +30,9 @@ namespace Multicare_pharmacy
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sales));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tab01 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tab02 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tab03 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -62,11 +62,11 @@ namespace Multicare_pharmacy
             this.tab01.ColorContrastOnClick = 45;
             this.tab01.ColorContrastOnHover = 45;
             this.tab01.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges31.BottomLeft = true;
-            borderEdges31.BottomRight = true;
-            borderEdges31.TopLeft = true;
-            borderEdges31.TopRight = true;
-            this.tab01.CustomizableEdges = borderEdges31;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.tab01.CustomizableEdges = borderEdges1;
             this.tab01.DialogResult = System.Windows.Forms.DialogResult.None;
             this.tab01.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.tab01.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -153,11 +153,11 @@ namespace Multicare_pharmacy
             this.tab02.ColorContrastOnClick = 45;
             this.tab02.ColorContrastOnHover = 45;
             this.tab02.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges32.BottomLeft = true;
-            borderEdges32.BottomRight = true;
-            borderEdges32.TopLeft = true;
-            borderEdges32.TopRight = true;
-            this.tab02.CustomizableEdges = borderEdges32;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.tab02.CustomizableEdges = borderEdges2;
             this.tab02.DialogResult = System.Windows.Forms.DialogResult.None;
             this.tab02.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.tab02.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -244,11 +244,11 @@ namespace Multicare_pharmacy
             this.tab03.ColorContrastOnClick = 45;
             this.tab03.ColorContrastOnHover = 45;
             this.tab03.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges33.BottomLeft = true;
-            borderEdges33.BottomRight = true;
-            borderEdges33.TopLeft = true;
-            borderEdges33.TopRight = true;
-            this.tab03.CustomizableEdges = borderEdges33;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.tab03.CustomizableEdges = borderEdges3;
             this.tab03.DialogResult = System.Windows.Forms.DialogResult.None;
             this.tab03.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.tab03.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -363,6 +363,7 @@ namespace Multicare_pharmacy
             this.ClientSize = new System.Drawing.Size(829, 548);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Sales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";
             this.Load += new System.EventHandler(this.Sales_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -30,7 +30,7 @@ namespace Multicare_pharmacy
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuUserControl1 = new Bunifu.UI.WinForms.BunifuUserControl();
@@ -47,6 +47,7 @@ namespace Multicare_pharmacy
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.Location = new System.Drawing.Point(301, 12);
@@ -93,7 +94,7 @@ namespace Multicare_pharmacy
             this.bunifuUserControl1.ColorContrastOnHover = 30;
             this.bunifuUserControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuUserControl1.Image = null;
-            this.bunifuUserControl1.ImageMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.bunifuUserControl1.ImageMargin = new System.Windows.Forms.Padding(0);
             this.bunifuUserControl1.Location = new System.Drawing.Point(77, 69);
             this.bunifuUserControl1.Name = "bunifuUserControl1";
             this.bunifuUserControl1.ShowBorders = true;
@@ -106,6 +107,7 @@ namespace Multicare_pharmacy
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.BackColor = System.Drawing.Color.White;
+            this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel3.Location = new System.Drawing.Point(287, 162);
@@ -122,6 +124,7 @@ namespace Multicare_pharmacy
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.BackColor = System.Drawing.Color.White;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel4.Location = new System.Drawing.Point(290, 233);
@@ -179,11 +182,11 @@ namespace Multicare_pharmacy
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges1;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -265,6 +268,7 @@ namespace Multicare_pharmacy
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.bunifuUserControl1);
             this.Name = "loginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
