@@ -26,13 +26,19 @@ namespace Multicare_pharmacy.Forms
         private void AddBTN_Click(object sender, EventArgs e)
         {
             var connection = Configuration.getInstance().getConnection();
-            SqlCommand command = new SqlCommand("INSERT INTO Customer VALUES (@Name, @Phone, @Address)", connection);
             try
             {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
+                beginCommand.ExecuteNonQuery();
+
+                SqlCommand command = new SqlCommand("INSERT INTO Customer VALUES (@Name, @Phone, @Address)", connection);
                 command.Parameters.AddWithValue("@Name", custName.Text);
                 command.Parameters.AddWithValue("@Phone", custPhone.Text);
                 command.Parameters.AddWithValue("@Address", custAddress.Text);
                 command.ExecuteNonQuery();
+
+                SqlCommand endCommand = new SqlCommand("END TRANSACTION", connection);
+                endCommand.ExecuteNonQuery();
                 clearFields();
                 MessageBox.Show("Customer added to the system successfully");
             }
