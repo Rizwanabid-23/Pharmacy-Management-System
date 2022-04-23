@@ -126,6 +126,14 @@
         b8AmOAkrAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="tab03.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADMAAAAmCAYAAABpuqMCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVFhH7c8xEQAgDMBAlGAZ/CGDvQUBCEi5DD9lSusz
+        Vp+Z9cW6M69QkzNUzlA5Q+UMlTNUzlA5Q+UMlTNUzlA5Q+UMlTNUzlA5Q+UMlTNUn82M2K9Qzoh9ALG3
+        Ot/uwMkxAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="tab02.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADEAAAAmCAYAAABtT3M/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -134,12 +142,13 @@
         b8AmOAkrAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="tab03.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="signOutButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADMAAAAmCAYAAABpuqMCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVFhH7c8xEQAgDMBAlGAZ/CGDvQUBCEi5DD9lSusz
-        Vp+Z9cW6M69QkzNUzlA5Q+UMlTNUzlA5Q+UMlTNUzlA5Q+UMlTNUzlA5Q+UMlTNUn82M2K9Qzoh9ALG3
-        Ot/uwMkxAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAGsAAAAnCAYAAAAIJbYbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dExEYAwAMBAlNQy+EMGewsCENDc/fBTxhzj
+        mve41mJ38/5m/QV2ZFaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaI
+        WSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVcoxzPn+BzZzzeQHzq4/c6sp30wAAAABJRU5E
+        rkJggg==
 </value>
   </data>
 </root>

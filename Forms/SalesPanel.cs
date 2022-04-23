@@ -10,6 +10,7 @@ namespace Multicare_pharmacy.Forms
     public partial class SalesPanel : Form
     {
         DataTable dt = new DataTable();
+        Forms.AddCustomer addCustomerInstance = Forms.AddCustomer.instance();
         public SalesPanel(string sessionCode, string EID, string EName)
         {
             InitializeComponent();
@@ -69,7 +70,7 @@ namespace Multicare_pharmacy.Forms
                         var connection = Configuration.getInstance().getConnection();
                         try
                         {
-                            SqlDataAdapter dataAdapter = new SqlDataAdapter("Select * FROM Product WHERE ID='" + PId + "'", connection);
+                            SqlDataAdapter dataAdapter = new SqlDataAdapter("Select * FROM Product WHERE ID='" + PId + "'AND Quantity>='" + Quantity + "'", connection);
                             DataTable dataTable = new DataTable();
                             dataAdapter.Fill(dataTable);
                             DataTable mergedDataTable = mergeDataTable(dataTable, dt);
@@ -96,7 +97,6 @@ namespace Multicare_pharmacy.Forms
 
         private void addCustBTN_Click(object sender, EventArgs e)
         {
-            Forms.AddCustomer addCustomerInstance = new Forms.AddCustomer();
             addCustomerInstance.Show();
         }
 
@@ -140,8 +140,11 @@ namespace Multicare_pharmacy.Forms
             dt1.Columns.Add("Total", typeof(Decimal));
             for (int i = 0; i < dt1.Rows.Count; i++)
             {
-                dt1.Rows[i]["Quantity"] = dt2.Rows[i]["Quantity"];
-                dt1.Rows[i]["Total"] = int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString());
+                if (dt1.Rows[i]["ID"] == dt2.Rows[i]["ID"])
+                {
+                    dt1.Rows[i]["Quantity"] = dt2.Rows[i]["Quantity"];
+                    dt1.Rows[i]["Total"] = int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString());
+                }
             }
             return dt1;
         }
@@ -160,11 +163,6 @@ namespace Multicare_pharmacy.Forms
             CAddress.Text = String.Empty;
             grandTotal.Text = "Grand Total: 0";
             totalProducts.Text = "Total Products: 0";
-        }
-
-        private void SignOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

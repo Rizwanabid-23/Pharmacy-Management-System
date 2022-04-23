@@ -15,6 +15,7 @@ namespace Multicare_pharmacy
         Forms.SalesPanel screen01;
         Forms.SalesPanel screen02;
         Forms.SalesPanel screen03;
+        Forms.AddCustomer addCustomerInstance = Forms.AddCustomer.instance();
         private Form currentPanel;
         public Sales(string EID, string EName)
         {
@@ -57,6 +58,12 @@ namespace Multicare_pharmacy
         private void tab03_Click(object sender, EventArgs e)
         {
             openNextPanel(screen03, sender);
+        }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+            addCustomerInstance.Hide();
+            this.Close();
         }
     }
 }

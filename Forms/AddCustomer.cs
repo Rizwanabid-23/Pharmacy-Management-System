@@ -13,14 +13,19 @@ namespace Multicare_pharmacy.Forms
 {
     public partial class AddCustomer : Form
     {
-        public AddCustomer()
+        private static AddCustomer customerInstance;
+        private AddCustomer()
         {
             InitializeComponent();
         }
 
-        private void closeBTN_Click(object sender, EventArgs e)
+        public static AddCustomer instance()
         {
-            this.Close();
+            if (customerInstance == null)
+            {
+                customerInstance = new AddCustomer();
+            }
+            return customerInstance;
         }
 
         private void AddBTN_Click(object sender, EventArgs e)
@@ -37,7 +42,7 @@ namespace Multicare_pharmacy.Forms
                 command.Parameters.AddWithValue("@Address", custAddress.Text);
                 command.ExecuteNonQuery();
 
-                SqlCommand endCommand = new SqlCommand("END TRANSACTION", connection);
+                SqlCommand endCommand = new SqlCommand("COMMIT TRANSACTION", connection);
                 endCommand.ExecuteNonQuery();
                 clearFields();
                 MessageBox.Show("Customer added to the system successfully");
@@ -47,6 +52,11 @@ namespace Multicare_pharmacy.Forms
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void closeBTN_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
         public void clearFields()
