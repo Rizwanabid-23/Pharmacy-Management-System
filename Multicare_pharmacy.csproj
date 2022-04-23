@@ -146,6 +146,7 @@
     <EmbeddedResource Include="uc_addemployee.resx">
       <DependentUpon>uc_addemployee.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="MultiCarePharmacyDataSet.xsc">
       <DependentUpon>MultiCarePharmacyDataSet.xsd</DependentUpon>
     </None>

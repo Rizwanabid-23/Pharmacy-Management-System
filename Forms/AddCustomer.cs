@@ -42,8 +42,8 @@ namespace Multicare_pharmacy.Forms
                 command.Parameters.AddWithValue("@Address", custAddress.Text);
                 command.ExecuteNonQuery();
 
-                SqlCommand endCommand = new SqlCommand("COMMIT TRANSACTION", connection);
-                endCommand.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
+                commitCommand.ExecuteNonQuery();
                 clearFields();
                 MessageBox.Show("Customer added to the system successfully");
             }

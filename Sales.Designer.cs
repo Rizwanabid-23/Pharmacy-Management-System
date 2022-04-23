@@ -193,6 +193,7 @@ namespace Multicare_pharmacy
             this.tab01.TextMarginLeft = 0;
             this.tab01.TextPadding = new System.Windows.Forms.Padding(0);
             this.tab01.UseDefaultRadiusAndThickness = true;
+            this.tab01.Click += new System.EventHandler(this.tab01_Click);
             // 
             // tab03
             // 
@@ -283,6 +284,7 @@ namespace Multicare_pharmacy
             this.tab03.TextMarginLeft = 0;
             this.tab03.TextPadding = new System.Windows.Forms.Padding(0);
             this.tab03.UseDefaultRadiusAndThickness = true;
+            this.tab03.Click += new System.EventHandler(this.tab03_Click);
             // 
             // tab02
             // 
@@ -373,6 +375,7 @@ namespace Multicare_pharmacy
             this.tab02.TextMarginLeft = 0;
             this.tab02.TextPadding = new System.Windows.Forms.Padding(0);
             this.tab02.UseDefaultRadiusAndThickness = true;
+            this.tab02.Click += new System.EventHandler(this.tab02_Click);
             // 
             // signOutButton
             // 
