@@ -16,7 +16,7 @@ namespace Multicare_pharmacy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sales("02", "ALI"));
+            Application.Run(new loginForm());
         }
     }
 }
