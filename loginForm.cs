@@ -30,7 +30,9 @@ namespace Multicare_pharmacy
                 if (check[0] == "admin")
                 {
                     admins admin = new admins();
+                    
                     admin.Show();
+                    
                     this.Hide();
                 }
                 else if (check[0] == "employee")

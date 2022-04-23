@@ -21,25 +21,31 @@ namespace Multicare_pharmacy
 
         private void admins_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Product' table. You can move, or remove it, as needed.
-            //this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
-            // TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Employee' table. You can move, or remove it, as needed.
-            //this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
-            //this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
+        //     TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Product' table.You can move, or remove it, as needed.
+            this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
+      //  TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Employee' table.You can move, or remove it, as needed.
+            this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
+            this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
             listpanel.Add(panel1);
             listpanel.Add(panel2);
             listpanel.Add(panel3);
             listpanel.Add(panel4);
             listpanel.Add(panel5);
 
-            listpanel[1].Show();
-            listpanel[1].BringToFront();
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel2")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
         }
 
-        private void addEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
         private void bunifuButton2_Click_1(object sender, EventArgs e)
@@ -265,6 +271,73 @@ namespace Multicare_pharmacy
                     listpanel[i].Hide();
                 }
             }
+        }
+
+        private void bunifuButton7_Click(object sender, EventArgs e)
+        {
+            string id = comboBox9.Text;
+            string qty = textBox34.Text;
+
+
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("UPDATE Product SET Packs='"+qty+"'+(Select Packs from Product where ID='"+id+"') where ID='"+id+"' ", con);
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Stock updated successfuly");
+        }
+
+        private void bunifuButton6_Click(object sender, EventArgs e)
+        {
+            int pid = int.Parse(comboBox8.Text);
+            string pname = textBox33.Text;
+            float sprice = float.Parse(textBox32.Text);
+            float pprice = float.Parse(textBox31.Text);
+            string category = comboBox7.Text;
+            int cat = 0;
+            if (category == "Medicine")
+            {
+                cat = 1;
+            }
+            else if (category == "Day-to-Day")
+            {
+                cat = 2;
+            }
+
+
+            DateTime mfg = Convert.ToDateTime(bunifuDatePicker4.Text);
+            DateTime exp = Convert.ToDateTime(bunifuDatePicker3.Text);
+            float nop = float.Parse(textBox30.Text);
+            int qty = int.Parse(textBox29.Text);
+            int legal = int.Parse(comboBox6.Text);
+            float potency = float.Parse(textBox28.Text);
+            float disc = float.Parse(textBox27.Text);
+            int sid = int.Parse(comboBox5.Text);
+            string manufac = textBox26.Text;
+
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("UPDATE Product SET ProductName='"+pname+"',SalePrice='"+sprice+"',PurchasePrice='"+pprice+"',Category='"+cat+"',ManufacturingDate='"+mfg+"',ExpiryDate='"+exp+"',Packs='"+nop+"',QuantityPerPack='"+qty+"',Legality='"+legal+"',Potency='"+potency+"',Discount='"+disc+"'  where ID='" + pid + "' ", con);
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Product Data updated Successfully");
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+            int eid = int.Parse(comboBox4.Text);
+            string uname = textBox25.Text;
+            string pin = textBox24.Text;
+            string fname = textBox23.Text;
+            string lname = textBox22.Text;
+            string cnic = (textBox21.Text);
+            string adress = textBox20.Text;
+            string phone = textBox19.Text;
+            string email = textBox18.Text;
+
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("UPDATE Employee SET Username='" + uname + "',PIN='" + pin + "',FirstName='" + fname + "',LastName='" + lname + "',CNIC='" + cnic + "',Address='" + adress + "',Phone='" + phone + "',Email='" + email + "'  where ID='" + eid + "' ", con);
+
+            cmd.ExecuteNonQuery();
+
         }
     }
 }
