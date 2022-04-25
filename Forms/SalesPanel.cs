@@ -1,5 +1,4 @@
-﻿using Bunifu.UI.WinForms;
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -43,12 +42,13 @@ namespace Multicare_pharmacy.Forms
         {
             Int32 billID = 0;
             var connection = Configuration.getInstance().getConnection();
-            if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
+            if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && CID.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
             {
                 int PIdCheck;
                 int QuantityCheck;
                 int amountRecievedCheck;
-                if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
+                int CIDCheck;
+                if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && int.TryParse(CID.Text, out CIDCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
                 {
                     try
                     {
@@ -69,7 +69,7 @@ namespace Multicare_pharmacy.Forms
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Here01");
+                        MessageBox.Show(ex.Message, "Updation Error 01");
                     }
                     try
                     {
@@ -84,15 +84,13 @@ namespace Multicare_pharmacy.Forms
 
                         SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
                         commitCommand.ExecuteNonQuery();
-                        clearFields();
-                        MessageBox.Show("Customer added to the system successfully");
 
                         SqlCommand getBillID = new SqlCommand("SELECT TOP(1) ID FROM Bill ORDER BY 1 DESC", connection);
                         billID = (Int32)getBillID.ExecuteScalar();
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Here02");
+                        MessageBox.Show(ex.Message, "Updation Erorr 02");
                     }
                     try
                     {
@@ -127,15 +125,12 @@ namespace Multicare_pharmacy.Forms
 
                             SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
                             commitCommand.ExecuteNonQuery();
-                            clearFields();
-                            MessageBox.Show("Customer added to the system successfully");
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Here02");
+                        MessageBox.Show(ex.Message, "Updation Error 03");
                     }
-
                 }
                 else
                 {
@@ -273,6 +268,22 @@ namespace Multicare_pharmacy.Forms
             CAddress.Text = String.Empty;
             grandTotal.Text = "Grand Total: 0";
             totalProducts.Text = "Total Products: 0";
+        }
+
+        private void detailsDGV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int rowIndex = detailsDGV.CurrentCell.RowIndex;
+            int PId = int.Parse(detailsDGV.Rows[rowIndex].Cells[0].Value.ToString());
+            for (int i = mergedDataTable.Rows.Count - 1; i >= 0; i--)
+            {
+                DataRow dr = mergedDataTable.Rows[i];
+                if (dr["ID"].ToString() == PId.ToString())
+                    dr.Delete();
+            }
+            mergedDataTable.AcceptChanges();
+            detailsDGV.Rows.RemoveAt(rowIndex);
+            totalProducts.Text = "Total Products: " + detailsDGV.Rows.Count.ToString();
+            grandTotal.Text = "Grand Total: " + mergedDataTable.AsEnumerable().Sum(dr => dr.Field<Decimal>("Total")).ToString();
         }
     }
 }
