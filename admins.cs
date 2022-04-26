@@ -32,6 +32,8 @@ namespace Multicare_pharmacy
             listpanel.Add(panel5);
             listpanel.Add(panel6);
             listpanel.Add(panel7);
+            listpanel.Add(panel8);
+            listpanel.Add(panel9);
 
             for (int i = 0; i < listpanel.Count; i++)
             {
@@ -86,16 +88,8 @@ namespace Multicare_pharmacy
             string email = textBox9.Text;
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Insert into Employee values (@Username,@PIN,@FirstName,@LastName,@CNIC,@Address,@Phone,@Email)", con);
-          //  cmd.Parameters.AddWithValue("@ID", id);
-            cmd.Parameters.AddWithValue("@Username", uname);
-            cmd.Parameters.AddWithValue("@PIN", pin);
-            cmd.Parameters.AddWithValue("@FirstName", fname);
-            cmd.Parameters.AddWithValue("@LastName", lname);
-            cmd.Parameters.AddWithValue("@CNIC", cnic);
-            cmd.Parameters.AddWithValue("@Address", adress);
-            cmd.Parameters.AddWithValue("@Phone", phone);
-            cmd.Parameters.AddWithValue("@Email", email);
+            SqlCommand cmd = new SqlCommand("exec addEmployee '"+uname+"','"+pin+"','"+fname+"','"+lname+"','"+cnic+"','"+adress+"','"+phone+"','"+email+"' ", con);
+          
             cmd.ExecuteNonQuery();
             MessageBox.Show("Successfully saved");
         }
@@ -372,6 +366,57 @@ namespace Multicare_pharmacy
             SqlCommand cmd = new SqlCommand("Delete from Product where ID='" + id + "' ", con);
 
             cmd.ExecuteNonQuery();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel8")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                }
+            }
+        }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listpanel.Count; i++)
+            {
+                if (listpanel[i].Name == "panel9")
+                {
+                    listpanel[i].Show();
+                    listpanel[i].BringToFront();
+                }
+                else
+                {
+                    listpanel[i].Hide();
+                    listpanel[i].SendToBack();
+                }
+            }
+        }
+
+        private void bunifuButton14_Click(object sender, EventArgs e)
+        {
+            string name = textBox38.Text;
+            string type = comboBox14.Text;
+            string phone = textBox39.Text;
+            string adress = textBox40.Text;
+
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("Exec add_supplier '"+name+"','"+type+"','"+phone+"','"+adress+"' ", con);
+
+            cmd.ExecuteNonQuery();
+
+
+            panel9.Hide();
+            panel2.Show();
+            panel2.BringToFront();
         }
     }
 }
