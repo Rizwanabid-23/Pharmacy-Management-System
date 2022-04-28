@@ -57,14 +57,11 @@ namespace Multicare_pharmacy.Forms
                             int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
                             int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
 
-                            SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
-                            beginCommand.ExecuteNonQuery();
-
-                            SqlCommand command = new SqlCommand("UPDATE Product SET Packs = Packs - '" + Quantity + "' WHERE ID='" + PId + "'", connection);
+                            SqlCommand command = new SqlCommand("spUpdateQuantity", connection);
+                            command.CommandType = CommandType.StoredProcedure;
+                            command.Parameters.AddWithValue("@Quantity", Quantity);
+                            command.Parameters.AddWithValue("@PId", PId);
                             command.ExecuteNonQuery();
-
-                            SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
-                            commitCommand.ExecuteNonQuery();
                         }
                     }
                     catch (Exception ex)
@@ -73,17 +70,12 @@ namespace Multicare_pharmacy.Forms
                     }
                     try
                     {
-                        SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
-                        beginCommand.ExecuteNonQuery();
-
-                        SqlCommand command = new SqlCommand("INSERT INTO Bill VALUES (@CustomerID, @EmployeeID, @OrderDate)", connection);
+                        SqlCommand command = new SqlCommand("spUpdateBill", connection);
+                        command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@CustomerID", CID.Text);
                         command.Parameters.AddWithValue("@EmployeeID", employeeID.Text);
                         command.Parameters.AddWithValue("@OrderDate", DateTime.Today);
                         command.ExecuteNonQuery();
-
-                        SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
-                        commitCommand.ExecuteNonQuery();
 
                         SqlCommand getBillID = new SqlCommand("SELECT TOP(1) ID FROM Bill ORDER BY 1 DESC", connection);
                         billID = (Int32)getBillID.ExecuteScalar();
@@ -111,20 +103,14 @@ namespace Multicare_pharmacy.Forms
                             int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
                             int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
                             int Total = int.Parse(detailsDGV.Rows[i].Cells[5].Value.ToString());
-
-                            SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
-                            beginCommand.ExecuteNonQuery();
-
-                            SqlCommand command = new SqlCommand("INSERT INTO BillDetails VALUES (@BillID, @ProductID, @Quantity, @TotalAmount, @PaymentType)", connection);
+                            SqlCommand command = new SqlCommand("spUpdateBillDetails", connection);
+                            command.CommandType = CommandType.StoredProcedure;
                             command.Parameters.AddWithValue("@BillID", billID);
                             command.Parameters.AddWithValue("@ProductID", PId);
                             command.Parameters.AddWithValue("@Quantity", Quantity);
                             command.Parameters.AddWithValue("@TotalAmount", Total);
                             command.Parameters.AddWithValue("@PaymentType", paymentType);
                             command.ExecuteNonQuery();
-
-                            SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
-                            commitCommand.ExecuteNonQuery();
                         }
                     }
                     catch (Exception ex)
@@ -141,8 +127,8 @@ namespace Multicare_pharmacy.Forms
             {
                 MessageBox.Show("Error");
             }
-            //detailsDGV.Rows.Clear();
             mergedDataTable.Clear();
+            detailsDGV.DataSource = null;
             clearFields();
         }
 
