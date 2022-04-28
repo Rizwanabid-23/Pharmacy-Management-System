@@ -423,5 +423,22 @@ namespace Multicare_pharmacy
             report4 report4 = new report4();
             report4.Show();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuButton12_Click(object sender, EventArgs e)
+        {
+            report3 report3 = new report3();
+            report3.Show();
+        }
+
+        private void bunifuButton11_Click(object sender, EventArgs e)
+        {
+            report2 report2 = new report2();
+            report2.Show();
+        }
     }
 }

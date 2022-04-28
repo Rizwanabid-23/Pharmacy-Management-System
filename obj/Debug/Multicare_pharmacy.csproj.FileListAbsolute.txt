@@ -77,3 +77,5 @@ D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\AxShockwaveFlashObjects.d
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\CrystalDecisions.Windows.Forms.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\bin\Debug\ShockwaveFlashObjects.dll
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.report4.resources
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.report3.resources
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.report2.resources

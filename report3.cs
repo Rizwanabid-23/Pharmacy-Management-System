@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Multicare_pharmacy
+{
+    public partial class report3 : Form
+    {
+        public report3()
+        {
+            InitializeComponent();
+        }
+    }
+}
