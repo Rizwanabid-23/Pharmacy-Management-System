@@ -31,15 +31,20 @@ namespace Multicare_pharmacy
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admins));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges154 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges155 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges156 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges157 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges158 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges159 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges160 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges161 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges162 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges34 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges37 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges38 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges39 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges40 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges41 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges42 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -61,6 +66,7 @@ namespace Multicare_pharmacy
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -104,6 +110,7 @@ namespace Multicare_pharmacy
             this.bunifuDatePicker3 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuDatePicker4 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
@@ -142,7 +149,6 @@ namespace Multicare_pharmacy
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
-            this.supplierBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.supplierTableAdapter = new Multicare_pharmacy.MultiCarePharmacyDataSetTableAdapters.SupplierTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -155,40 +161,71 @@ namespace Multicare_pharmacy
             this.productTableAdapter = new Multicare_pharmacy.MultiCarePharmacyDataSetTableAdapters.ProductTableAdapter();
             this.button8 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
             this.bunifuButton7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBox34 = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label46 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button9 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.bunifuButton8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.textBox36 = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.bunifuButton8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label51 = new System.Windows.Forms.Label();
             this.textBox37 = new System.Windows.Forms.TextBox();
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.label52 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.bunifuButton13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label56 = new System.Windows.Forms.Label();
+            this.bunifuButton12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label55 = new System.Windows.Forms.Label();
+            this.bunifuButton11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label54 = new System.Windows.Forms.Label();
+            this.bunifuButton10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.supplierBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.bunifuButton14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.multiCarePharmacyDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).BeginInit();
             this.panel5.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).BeginInit();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -228,7 +265,7 @@ namespace Multicare_pharmacy
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Location = new System.Drawing.Point(196, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(644, 323);
+            this.panel1.Size = new System.Drawing.Size(638, 323);
             this.panel1.TabIndex = 5;
             // 
             // bunifuButton2
@@ -250,11 +287,11 @@ namespace Multicare_pharmacy
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges154.BottomLeft = true;
-            borderEdges154.BottomRight = true;
-            borderEdges154.TopLeft = true;
-            borderEdges154.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges154;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges29;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -340,11 +377,11 @@ namespace Multicare_pharmacy
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges155.BottomLeft = true;
-            borderEdges155.BottomRight = true;
-            borderEdges155.TopLeft = true;
-            borderEdges155.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges155;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges30;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -413,7 +450,7 @@ namespace Multicare_pharmacy
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(450, 163);
+            this.textBox9.Location = new System.Drawing.Point(423, 196);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(154, 20);
             this.textBox9.TabIndex = 17;
@@ -421,7 +458,7 @@ namespace Multicare_pharmacy
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(372, 166);
+            this.label9.Location = new System.Drawing.Point(348, 201);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 16;
@@ -429,21 +466,21 @@ namespace Multicare_pharmacy
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(450, 121);
+            this.textBox8.Location = new System.Drawing.Point(423, 149);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 15;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(450, 77);
+            this.textBox7.Location = new System.Drawing.Point(423, 103);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 14;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(450, 32);
+            this.textBox6.Location = new System.Drawing.Point(423, 58);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 13;
@@ -451,7 +488,7 @@ namespace Multicare_pharmacy
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(372, 121);
+            this.label8.Location = new System.Drawing.Point(348, 153);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 13);
             this.label8.TabIndex = 12;
@@ -460,7 +497,7 @@ namespace Multicare_pharmacy
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(372, 80);
+            this.label7.Location = new System.Drawing.Point(348, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 11;
@@ -469,7 +506,7 @@ namespace Multicare_pharmacy
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(372, 39);
+            this.label6.Location = new System.Drawing.Point(348, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 10;
@@ -478,7 +515,7 @@ namespace Multicare_pharmacy
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 166);
+            this.label5.Location = new System.Drawing.Point(57, 201);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 9;
@@ -487,7 +524,7 @@ namespace Multicare_pharmacy
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(57, 121);
+            this.label4.Location = new System.Drawing.Point(57, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 8;
@@ -496,7 +533,7 @@ namespace Multicare_pharmacy
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 82);
+            this.label3.Location = new System.Drawing.Point(56, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 13);
             this.label3.TabIndex = 7;
@@ -505,7 +542,7 @@ namespace Multicare_pharmacy
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 39);
+            this.label2.Location = new System.Drawing.Point(56, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 6;
@@ -513,28 +550,28 @@ namespace Multicare_pharmacy
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(165, 163);
+            this.textBox5.Location = new System.Drawing.Point(165, 196);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 4;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(165, 121);
+            this.textBox4.Location = new System.Drawing.Point(165, 147);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(165, 77);
+            this.textBox3.Location = new System.Drawing.Point(165, 103);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 36);
+            this.textBox2.Location = new System.Drawing.Point(165, 58);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
@@ -542,6 +579,7 @@ namespace Multicare_pharmacy
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.bunifuPictureBox1);
             this.panel2.Controls.Add(this.bunifuButton4);
             this.panel2.Controls.Add(this.bunifuButton3);
             this.panel2.Controls.Add(this.textBox15);
@@ -570,10 +608,27 @@ namespace Multicare_pharmacy
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(190, 43);
+            this.panel2.Location = new System.Drawing.Point(187, 49);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(638, 320);
             this.panel2.TabIndex = 20;
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 14;
+            this.bunifuPictureBox1.Image = global::Multicare_pharmacy.Properties.Resources.download_icon_add_board_new_plus_icon_1320186882821780394_512;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(531, 217);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(28, 28);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 28;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // bunifuButton4
             // 
@@ -594,11 +649,11 @@ namespace Multicare_pharmacy
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges156.BottomLeft = true;
-            borderEdges156.BottomRight = true;
-            borderEdges156.TopLeft = true;
-            borderEdges156.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges156;
+            borderEdges31.BottomLeft = true;
+            borderEdges31.BottomRight = true;
+            borderEdges31.TopLeft = true;
+            borderEdges31.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges31;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -684,11 +739,11 @@ namespace Multicare_pharmacy
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges157.BottomLeft = true;
-            borderEdges157.BottomRight = true;
-            borderEdges157.TopLeft = true;
-            borderEdges157.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges157;
+            borderEdges32.BottomLeft = true;
+            borderEdges32.BottomRight = true;
+            borderEdges32.TopLeft = true;
+            borderEdges32.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges32;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -857,11 +912,14 @@ namespace Multicare_pharmacy
             // 
             // comboBox3
             // 
+            this.comboBox3.DataSource = this.supplierBindingSource1;
+            this.comboBox3.DisplayMember = "Name";
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(424, 221);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(100, 21);
             this.comboBox3.TabIndex = 18;
+            this.comboBox3.ValueMember = "ID";
             // 
             // comboBox2
             // 
@@ -1091,11 +1149,11 @@ namespace Multicare_pharmacy
             this.bunifuButton6.ColorContrastOnClick = 45;
             this.bunifuButton6.ColorContrastOnHover = 45;
             this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges158.BottomLeft = true;
-            borderEdges158.BottomRight = true;
-            borderEdges158.TopLeft = true;
-            borderEdges158.TopRight = true;
-            this.bunifuButton6.CustomizableEdges = borderEdges158;
+            borderEdges33.BottomLeft = true;
+            borderEdges33.BottomRight = true;
+            borderEdges33.TopLeft = true;
+            borderEdges33.TopRight = true;
+            this.bunifuButton6.CustomizableEdges = borderEdges33;
             this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1272,6 +1330,11 @@ namespace Multicare_pharmacy
             this.comboBox5.Size = new System.Drawing.Size(100, 21);
             this.comboBox5.TabIndex = 44;
             this.comboBox5.ValueMember = "ID";
+            // 
+            // supplierBindingSource
+            // 
+            this.supplierBindingSource.DataMember = "Supplier";
+            this.supplierBindingSource.DataSource = this.multiCarePharmacyDataSet;
             // 
             // comboBox6
             // 
@@ -1477,11 +1540,11 @@ namespace Multicare_pharmacy
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges159.BottomLeft = true;
-            borderEdges159.BottomRight = true;
-            borderEdges159.TopLeft = true;
-            borderEdges159.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges159;
+            borderEdges34.BottomLeft = true;
+            borderEdges34.BottomRight = true;
+            borderEdges34.TopLeft = true;
+            borderEdges34.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges34;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1685,11 +1748,6 @@ namespace Multicare_pharmacy
             this.textBox25.Size = new System.Drawing.Size(100, 20);
             this.textBox25.TabIndex = 19;
             // 
-            // supplierBindingSource
-            // 
-            this.supplierBindingSource.DataMember = "Supplier";
-            this.supplierBindingSource.DataSource = this.multiCarePharmacyDataSet;
-            // 
             // supplierTableAdapter
             // 
             this.supplierTableAdapter.ClearBeforeFill = true;
@@ -1699,9 +1757,9 @@ namespace Multicare_pharmacy
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(43, 327);
+            this.button1.Location = new System.Drawing.Point(43, 321);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 36);
+            this.button1.Size = new System.Drawing.Size(94, 42);
             this.button1.TabIndex = 21;
             this.button1.Text = "Sign out";
             this.button1.UseVisualStyleBackColor = true;
@@ -1713,6 +1771,7 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.AutoSize = true;
+            this.button2.BackgroundImage = global::Multicare_pharmacy.Properties.Resources.pngtree_black_linear_gradients_transparent_png_image_2484455;
             this.button2.Location = new System.Drawing.Point(43, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 34);
@@ -1821,6 +1880,23 @@ namespace Multicare_pharmacy
             this.panel5.Size = new System.Drawing.Size(635, 320);
             this.panel5.TabIndex = 56;
             // 
+            // textBox35
+            // 
+            this.textBox35.Enabled = false;
+            this.textBox35.Location = new System.Drawing.Point(127, 170);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(171, 20);
+            this.textBox35.TabIndex = 8;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(42, 173);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(73, 13);
+            this.label48.TabIndex = 7;
+            this.label48.Text = "Product name";
+            // 
             // bunifuButton7
             // 
             this.bunifuButton7.AllowAnimations = true;
@@ -1840,11 +1916,11 @@ namespace Multicare_pharmacy
             this.bunifuButton7.ColorContrastOnClick = 45;
             this.bunifuButton7.ColorContrastOnHover = 45;
             this.bunifuButton7.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges160.BottomLeft = true;
-            borderEdges160.BottomRight = true;
-            borderEdges160.TopLeft = true;
-            borderEdges160.TopRight = true;
-            this.bunifuButton7.CustomizableEdges = borderEdges160;
+            borderEdges35.BottomLeft = true;
+            borderEdges35.BottomRight = true;
+            borderEdges35.TopLeft = true;
+            borderEdges35.TopRight = true;
+            this.bunifuButton7.CustomizableEdges = borderEdges35;
             this.bunifuButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1938,6 +2014,11 @@ namespace Multicare_pharmacy
             this.comboBox9.TabIndex = 1;
             this.comboBox9.ValueMember = "ID";
             // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataMember = "Product";
+            this.productBindingSource1.DataSource = this.multiCarePharmacyDataSet;
+            // 
             // label46
             // 
             this.label46.AutoSize = true;
@@ -1953,7 +2034,7 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button8, 1, 6);
@@ -1962,6 +2043,7 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.button9, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -1973,32 +2055,23 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(181, 366);
             this.tableLayoutPanel1.TabIndex = 57;
             // 
-            // label48
+            // button9
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(42, 173);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(73, 13);
-            this.label48.TabIndex = 7;
-            this.label48.Text = "Product name";
-            // 
-            // textBox35
-            // 
-            this.textBox35.Enabled = false;
-            this.textBox35.Location = new System.Drawing.Point(127, 170);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(171, 20);
-            this.textBox35.TabIndex = 8;
-            // 
-            // productBindingSource1
-            // 
-            this.productBindingSource1.DataMember = "Product";
-            this.productBindingSource1.DataSource = this.multiCarePharmacyDataSet;
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.Location = new System.Drawing.Point(43, 281);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(94, 34);
+            this.button9.TabIndex = 30;
+            this.button9.Text = "Reports";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel6
             // 
@@ -2012,25 +2085,23 @@ namespace Multicare_pharmacy
             this.panel6.Size = new System.Drawing.Size(638, 326);
             this.panel6.TabIndex = 56;
             // 
-            // label49
+            // label50
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(201, 55);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(67, 13);
-            this.label49.TabIndex = 0;
-            this.label49.Text = "Employee ID";
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(201, 130);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(35, 13);
+            this.label50.TabIndex = 4;
+            this.label50.Text = "Name";
             // 
-            // comboBox10
+            // textBox36
             // 
-            this.comboBox10.DataSource = this.employeeBindingSource;
-            this.comboBox10.DisplayMember = "ID";
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(315, 52);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(100, 21);
-            this.comboBox10.TabIndex = 1;
-            this.comboBox10.ValueMember = "ID";
+            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox36.Enabled = false;
+            this.textBox36.Location = new System.Drawing.Point(315, 127);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(100, 20);
+            this.textBox36.TabIndex = 3;
             // 
             // bunifuButton8
             // 
@@ -2051,11 +2122,11 @@ namespace Multicare_pharmacy
             this.bunifuButton8.ColorContrastOnClick = 45;
             this.bunifuButton8.ColorContrastOnHover = 45;
             this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges161.BottomLeft = true;
-            borderEdges161.BottomRight = true;
-            borderEdges161.TopLeft = true;
-            borderEdges161.TopRight = true;
-            this.bunifuButton8.CustomizableEdges = borderEdges161;
+            borderEdges36.BottomLeft = true;
+            borderEdges36.BottomRight = true;
+            borderEdges36.TopLeft = true;
+            borderEdges36.TopRight = true;
+            this.bunifuButton8.CustomizableEdges = borderEdges36;
             this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2122,23 +2193,25 @@ namespace Multicare_pharmacy
             this.bunifuButton8.UseDefaultRadiusAndThickness = true;
             this.bunifuButton8.Click += new System.EventHandler(this.bunifuButton8_Click);
             // 
-            // textBox36
+            // comboBox10
             // 
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox36.Enabled = false;
-            this.textBox36.Location = new System.Drawing.Point(315, 127);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(100, 20);
-            this.textBox36.TabIndex = 3;
+            this.comboBox10.DataSource = this.employeeBindingSource;
+            this.comboBox10.DisplayMember = "ID";
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(315, 52);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(100, 21);
+            this.comboBox10.TabIndex = 1;
+            this.comboBox10.ValueMember = "ID";
             // 
-            // label50
+            // label49
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(201, 130);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(35, 13);
-            this.label50.TabIndex = 4;
-            this.label50.Text = "Name";
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(201, 55);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(67, 13);
+            this.label49.TabIndex = 0;
+            this.label49.Text = "Employee ID";
             // 
             // panel7
             // 
@@ -2189,11 +2262,11 @@ namespace Multicare_pharmacy
             this.bunifuButton9.ColorContrastOnClick = 45;
             this.bunifuButton9.ColorContrastOnHover = 45;
             this.bunifuButton9.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges162.BottomLeft = true;
-            borderEdges162.BottomRight = true;
-            borderEdges162.TopLeft = true;
-            borderEdges162.TopRight = true;
-            this.bunifuButton9.CustomizableEdges = borderEdges162;
+            borderEdges37.BottomLeft = true;
+            borderEdges37.BottomRight = true;
+            borderEdges37.TopLeft = true;
+            borderEdges37.TopRight = true;
+            this.bunifuButton9.CustomizableEdges = borderEdges37;
             this.bunifuButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton9.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2280,20 +2353,692 @@ namespace Multicare_pharmacy
             this.label52.TabIndex = 0;
             this.label52.Text = "Product ID";
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.bunifuButton13);
+            this.panel8.Controls.Add(this.label56);
+            this.panel8.Controls.Add(this.bunifuButton12);
+            this.panel8.Controls.Add(this.label55);
+            this.panel8.Controls.Add(this.bunifuButton11);
+            this.panel8.Controls.Add(this.label54);
+            this.panel8.Controls.Add(this.bunifuButton10);
+            this.panel8.Controls.Add(this.comboBox13);
+            this.panel8.Controls.Add(this.comboBox12);
+            this.panel8.Controls.Add(this.label53);
+            this.panel8.Controls.Add(this.label1);
+            this.panel8.Location = new System.Drawing.Point(187, 46);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(632, 314);
+            this.panel8.TabIndex = 9;
+            // 
+            // bunifuButton13
+            // 
+            this.bunifuButton13.AllowAnimations = true;
+            this.bunifuButton13.AllowMouseEffects = true;
+            this.bunifuButton13.AllowToggling = false;
+            this.bunifuButton13.AnimationSpeed = 200;
+            this.bunifuButton13.AutoGenerateColors = false;
+            this.bunifuButton13.AutoRoundBorders = false;
+            this.bunifuButton13.AutoSizeLeftIcon = true;
+            this.bunifuButton13.AutoSizeRightIcon = true;
+            this.bunifuButton13.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton13.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton13.BackgroundImage")));
+            this.bunifuButton13.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton13.ButtonText = "Generate";
+            this.bunifuButton13.ButtonTextMarginLeft = 0;
+            this.bunifuButton13.ColorContrastOnClick = 45;
+            this.bunifuButton13.ColorContrastOnHover = 45;
+            this.bunifuButton13.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges38.BottomLeft = true;
+            borderEdges38.BottomRight = true;
+            borderEdges38.TopLeft = true;
+            borderEdges38.TopRight = true;
+            this.bunifuButton13.CustomizableEdges = borderEdges38;
+            this.bunifuButton13.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton13.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton13.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton13.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton13.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButton13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuButton13.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton13.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton13.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton13.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButton13.IconMarginLeft = 11;
+            this.bunifuButton13.IconPadding = 10;
+            this.bunifuButton13.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton13.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton13.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton13.IconSize = 25;
+            this.bunifuButton13.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton13.IdleBorderRadius = 1;
+            this.bunifuButton13.IdleBorderThickness = 1;
+            this.bunifuButton13.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton13.IdleIconLeftImage = null;
+            this.bunifuButton13.IdleIconRightImage = null;
+            this.bunifuButton13.IndicateFocus = false;
+            this.bunifuButton13.Location = new System.Drawing.Point(465, 203);
+            this.bunifuButton13.Name = "bunifuButton13";
+            this.bunifuButton13.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton13.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton13.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton13.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton13.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton13.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton13.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton13.OnDisabledState.IconRightImage = null;
+            this.bunifuButton13.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton13.onHoverState.BorderRadius = 1;
+            this.bunifuButton13.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton13.onHoverState.BorderThickness = 1;
+            this.bunifuButton13.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton13.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton13.onHoverState.IconLeftImage = null;
+            this.bunifuButton13.onHoverState.IconRightImage = null;
+            this.bunifuButton13.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton13.OnIdleState.BorderRadius = 1;
+            this.bunifuButton13.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton13.OnIdleState.BorderThickness = 1;
+            this.bunifuButton13.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton13.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton13.OnIdleState.IconLeftImage = null;
+            this.bunifuButton13.OnIdleState.IconRightImage = null;
+            this.bunifuButton13.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton13.OnPressedState.BorderRadius = 1;
+            this.bunifuButton13.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton13.OnPressedState.BorderThickness = 1;
+            this.bunifuButton13.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton13.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton13.OnPressedState.IconLeftImage = null;
+            this.bunifuButton13.OnPressedState.IconRightImage = null;
+            this.bunifuButton13.Size = new System.Drawing.Size(88, 27);
+            this.bunifuButton13.TabIndex = 10;
+            this.bunifuButton13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton13.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton13.TextMarginLeft = 0;
+            this.bunifuButton13.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButton13.UseDefaultRadiusAndThickness = true;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(42, 205);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(264, 18);
+            this.label56.TabIndex = 9;
+            this.label56.Text = "Report the products with their suppliers";
+            // 
+            // bunifuButton12
+            // 
+            this.bunifuButton12.AllowAnimations = true;
+            this.bunifuButton12.AllowMouseEffects = true;
+            this.bunifuButton12.AllowToggling = false;
+            this.bunifuButton12.AnimationSpeed = 200;
+            this.bunifuButton12.AutoGenerateColors = false;
+            this.bunifuButton12.AutoRoundBorders = false;
+            this.bunifuButton12.AutoSizeLeftIcon = true;
+            this.bunifuButton12.AutoSizeRightIcon = true;
+            this.bunifuButton12.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton12.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton12.BackgroundImage")));
+            this.bunifuButton12.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton12.ButtonText = "Generate";
+            this.bunifuButton12.ButtonTextMarginLeft = 0;
+            this.bunifuButton12.ColorContrastOnClick = 45;
+            this.bunifuButton12.ColorContrastOnHover = 45;
+            this.bunifuButton12.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges39.BottomLeft = true;
+            borderEdges39.BottomRight = true;
+            borderEdges39.TopLeft = true;
+            borderEdges39.TopRight = true;
+            this.bunifuButton12.CustomizableEdges = borderEdges39;
+            this.bunifuButton12.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton12.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton12.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton12.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton12.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButton12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuButton12.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton12.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton12.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton12.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButton12.IconMarginLeft = 11;
+            this.bunifuButton12.IconPadding = 10;
+            this.bunifuButton12.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton12.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton12.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton12.IconSize = 25;
+            this.bunifuButton12.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton12.IdleBorderRadius = 1;
+            this.bunifuButton12.IdleBorderThickness = 1;
+            this.bunifuButton12.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton12.IdleIconLeftImage = null;
+            this.bunifuButton12.IdleIconRightImage = null;
+            this.bunifuButton12.IndicateFocus = false;
+            this.bunifuButton12.Location = new System.Drawing.Point(465, 156);
+            this.bunifuButton12.Name = "bunifuButton12";
+            this.bunifuButton12.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton12.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton12.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton12.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton12.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton12.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton12.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton12.OnDisabledState.IconRightImage = null;
+            this.bunifuButton12.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton12.onHoverState.BorderRadius = 1;
+            this.bunifuButton12.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton12.onHoverState.BorderThickness = 1;
+            this.bunifuButton12.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton12.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton12.onHoverState.IconLeftImage = null;
+            this.bunifuButton12.onHoverState.IconRightImage = null;
+            this.bunifuButton12.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton12.OnIdleState.BorderRadius = 1;
+            this.bunifuButton12.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton12.OnIdleState.BorderThickness = 1;
+            this.bunifuButton12.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton12.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton12.OnIdleState.IconLeftImage = null;
+            this.bunifuButton12.OnIdleState.IconRightImage = null;
+            this.bunifuButton12.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton12.OnPressedState.BorderRadius = 1;
+            this.bunifuButton12.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton12.OnPressedState.BorderThickness = 1;
+            this.bunifuButton12.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton12.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton12.OnPressedState.IconLeftImage = null;
+            this.bunifuButton12.OnPressedState.IconRightImage = null;
+            this.bunifuButton12.Size = new System.Drawing.Size(88, 27);
+            this.bunifuButton12.TabIndex = 8;
+            this.bunifuButton12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton12.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton12.TextMarginLeft = 0;
+            this.bunifuButton12.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButton12.UseDefaultRadiusAndThickness = true;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(42, 158);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(205, 18);
+            this.label55.TabIndex = 7;
+            this.label55.Text = "Show the overall billing history";
+            // 
+            // bunifuButton11
+            // 
+            this.bunifuButton11.AllowAnimations = true;
+            this.bunifuButton11.AllowMouseEffects = true;
+            this.bunifuButton11.AllowToggling = false;
+            this.bunifuButton11.AnimationSpeed = 200;
+            this.bunifuButton11.AutoGenerateColors = false;
+            this.bunifuButton11.AutoRoundBorders = false;
+            this.bunifuButton11.AutoSizeLeftIcon = true;
+            this.bunifuButton11.AutoSizeRightIcon = true;
+            this.bunifuButton11.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton11.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton11.BackgroundImage")));
+            this.bunifuButton11.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton11.ButtonText = "Generate";
+            this.bunifuButton11.ButtonTextMarginLeft = 0;
+            this.bunifuButton11.ColorContrastOnClick = 45;
+            this.bunifuButton11.ColorContrastOnHover = 45;
+            this.bunifuButton11.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges40.BottomLeft = true;
+            borderEdges40.BottomRight = true;
+            borderEdges40.TopLeft = true;
+            borderEdges40.TopRight = true;
+            this.bunifuButton11.CustomizableEdges = borderEdges40;
+            this.bunifuButton11.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton11.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton11.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton11.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton11.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButton11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuButton11.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton11.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton11.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton11.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButton11.IconMarginLeft = 11;
+            this.bunifuButton11.IconPadding = 10;
+            this.bunifuButton11.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton11.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton11.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton11.IconSize = 25;
+            this.bunifuButton11.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton11.IdleBorderRadius = 1;
+            this.bunifuButton11.IdleBorderThickness = 1;
+            this.bunifuButton11.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton11.IdleIconLeftImage = null;
+            this.bunifuButton11.IdleIconRightImage = null;
+            this.bunifuButton11.IndicateFocus = false;
+            this.bunifuButton11.Location = new System.Drawing.Point(465, 111);
+            this.bunifuButton11.Name = "bunifuButton11";
+            this.bunifuButton11.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton11.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton11.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton11.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton11.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton11.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton11.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton11.OnDisabledState.IconRightImage = null;
+            this.bunifuButton11.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton11.onHoverState.BorderRadius = 1;
+            this.bunifuButton11.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton11.onHoverState.BorderThickness = 1;
+            this.bunifuButton11.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton11.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton11.onHoverState.IconLeftImage = null;
+            this.bunifuButton11.onHoverState.IconRightImage = null;
+            this.bunifuButton11.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton11.OnIdleState.BorderRadius = 1;
+            this.bunifuButton11.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton11.OnIdleState.BorderThickness = 1;
+            this.bunifuButton11.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton11.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton11.OnIdleState.IconLeftImage = null;
+            this.bunifuButton11.OnIdleState.IconRightImage = null;
+            this.bunifuButton11.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton11.OnPressedState.BorderRadius = 1;
+            this.bunifuButton11.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton11.OnPressedState.BorderThickness = 1;
+            this.bunifuButton11.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton11.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton11.OnPressedState.IconLeftImage = null;
+            this.bunifuButton11.OnPressedState.IconRightImage = null;
+            this.bunifuButton11.Size = new System.Drawing.Size(88, 27);
+            this.bunifuButton11.TabIndex = 6;
+            this.bunifuButton11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton11.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton11.TextMarginLeft = 0;
+            this.bunifuButton11.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButton11.UseDefaultRadiusAndThickness = true;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(42, 113);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(169, 18);
+            this.label54.TabIndex = 5;
+            this.label54.Text = "Show out of stock items";
+            // 
+            // bunifuButton10
+            // 
+            this.bunifuButton10.AllowAnimations = true;
+            this.bunifuButton10.AllowMouseEffects = true;
+            this.bunifuButton10.AllowToggling = false;
+            this.bunifuButton10.AnimationSpeed = 200;
+            this.bunifuButton10.AutoGenerateColors = false;
+            this.bunifuButton10.AutoRoundBorders = false;
+            this.bunifuButton10.AutoSizeLeftIcon = true;
+            this.bunifuButton10.AutoSizeRightIcon = true;
+            this.bunifuButton10.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton10.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton10.BackgroundImage")));
+            this.bunifuButton10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton10.ButtonText = "Generate";
+            this.bunifuButton10.ButtonTextMarginLeft = 0;
+            this.bunifuButton10.ColorContrastOnClick = 45;
+            this.bunifuButton10.ColorContrastOnHover = 45;
+            this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges41.BottomLeft = true;
+            borderEdges41.BottomRight = true;
+            borderEdges41.TopLeft = true;
+            borderEdges41.TopRight = true;
+            this.bunifuButton10.CustomizableEdges = borderEdges41;
+            this.bunifuButton10.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton10.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton10.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButton10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuButton10.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton10.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton10.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton10.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButton10.IconMarginLeft = 11;
+            this.bunifuButton10.IconPadding = 10;
+            this.bunifuButton10.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton10.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton10.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton10.IconSize = 25;
+            this.bunifuButton10.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton10.IdleBorderRadius = 1;
+            this.bunifuButton10.IdleBorderThickness = 1;
+            this.bunifuButton10.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton10.IdleIconLeftImage = null;
+            this.bunifuButton10.IdleIconRightImage = null;
+            this.bunifuButton10.IndicateFocus = false;
+            this.bunifuButton10.Location = new System.Drawing.Point(465, 62);
+            this.bunifuButton10.Name = "bunifuButton10";
+            this.bunifuButton10.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton10.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton10.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton10.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton10.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton10.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton10.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton10.OnDisabledState.IconRightImage = null;
+            this.bunifuButton10.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton10.onHoverState.BorderRadius = 1;
+            this.bunifuButton10.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton10.onHoverState.BorderThickness = 1;
+            this.bunifuButton10.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton10.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton10.onHoverState.IconLeftImage = null;
+            this.bunifuButton10.onHoverState.IconRightImage = null;
+            this.bunifuButton10.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton10.OnIdleState.BorderRadius = 1;
+            this.bunifuButton10.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton10.OnIdleState.BorderThickness = 1;
+            this.bunifuButton10.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton10.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton10.OnIdleState.IconLeftImage = null;
+            this.bunifuButton10.OnIdleState.IconRightImage = null;
+            this.bunifuButton10.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton10.OnPressedState.BorderRadius = 1;
+            this.bunifuButton10.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton10.OnPressedState.BorderThickness = 1;
+            this.bunifuButton10.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton10.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton10.OnPressedState.IconLeftImage = null;
+            this.bunifuButton10.OnPressedState.IconRightImage = null;
+            this.bunifuButton10.Size = new System.Drawing.Size(88, 27);
+            this.bunifuButton10.TabIndex = 4;
+            this.bunifuButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton10.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton10.TextMarginLeft = 0;
+            this.bunifuButton10.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButton10.UseDefaultRadiusAndThickness = true;
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Items.AddRange(new object[] {
+            "2020",
+            "2021",
+            "2022",
+            "2023"});
+            this.comboBox13.Location = new System.Drawing.Point(315, 63);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(64, 21);
+            this.comboBox13.TabIndex = 3;
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.comboBox12.Location = new System.Drawing.Point(197, 62);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(101, 21);
+            this.comboBox12.TabIndex = 2;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(42, 61);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(149, 18);
+            this.label53.TabIndex = 1;
+            this.label53.Text = "Calculate the profit in ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(248, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Generate Reports";
+            // 
+            // supplierBindingSource1
+            // 
+            this.supplierBindingSource1.DataMember = "Supplier";
+            this.supplierBindingSource1.DataSource = this.multiCarePharmacyDataSet;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.bunifuButton14);
+            this.panel9.Controls.Add(this.textBox40);
+            this.panel9.Controls.Add(this.textBox39);
+            this.panel9.Controls.Add(this.comboBox14);
+            this.panel9.Controls.Add(this.textBox38);
+            this.panel9.Controls.Add(this.textBox1);
+            this.panel9.Controls.Add(this.label62);
+            this.panel9.Controls.Add(this.label61);
+            this.panel9.Controls.Add(this.label60);
+            this.panel9.Controls.Add(this.label59);
+            this.panel9.Controls.Add(this.label58);
+            this.panel9.Controls.Add(this.label57);
+            this.panel9.Location = new System.Drawing.Point(187, 53);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(635, 313);
+            this.panel9.TabIndex = 29;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(256, 11);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(112, 20);
+            this.label57.TabIndex = 0;
+            this.label57.Text = "Add Supplier";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(203, 70);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(59, 13);
+            this.label58.TabIndex = 30;
+            this.label58.Text = "Supplier ID";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(203, 104);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(74, 13);
+            this.label59.TabIndex = 31;
+            this.label59.Text = "Supplier name";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(203, 142);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(31, 13);
+            this.label60.TabIndex = 32;
+            this.label60.Text = "Type";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(203, 175);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(38, 13);
+            this.label61.TabIndex = 33;
+            this.label61.Text = "Phone";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(203, 211);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(45, 13);
+            this.label62.TabIndex = 34;
+            this.label62.Text = "Address";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(322, 65);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 35;
+            // 
+            // textBox38
+            // 
+            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox38.Location = new System.Drawing.Point(322, 101);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(100, 20);
+            this.textBox38.TabIndex = 36;
+            // 
+            // comboBox14
+            // 
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Items.AddRange(new object[] {
+            "Company",
+            "Private"});
+            this.comboBox14.Location = new System.Drawing.Point(322, 137);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(98, 21);
+            this.comboBox14.TabIndex = 37;
+            // 
+            // textBox39
+            // 
+            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox39.Location = new System.Drawing.Point(322, 172);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(100, 20);
+            this.textBox39.TabIndex = 38;
+            // 
+            // textBox40
+            // 
+            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox40.Location = new System.Drawing.Point(322, 208);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(100, 20);
+            this.textBox40.TabIndex = 39;
+            // 
+            // bunifuButton14
+            // 
+            this.bunifuButton14.AllowAnimations = true;
+            this.bunifuButton14.AllowMouseEffects = true;
+            this.bunifuButton14.AllowToggling = false;
+            this.bunifuButton14.AnimationSpeed = 200;
+            this.bunifuButton14.AutoGenerateColors = false;
+            this.bunifuButton14.AutoRoundBorders = false;
+            this.bunifuButton14.AutoSizeLeftIcon = true;
+            this.bunifuButton14.AutoSizeRightIcon = true;
+            this.bunifuButton14.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton14.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton14.BackgroundImage")));
+            this.bunifuButton14.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton14.ButtonText = "Save";
+            this.bunifuButton14.ButtonTextMarginLeft = 0;
+            this.bunifuButton14.ColorContrastOnClick = 45;
+            this.bunifuButton14.ColorContrastOnHover = 45;
+            this.bunifuButton14.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges42.BottomLeft = true;
+            borderEdges42.BottomRight = true;
+            borderEdges42.TopLeft = true;
+            borderEdges42.TopRight = true;
+            this.bunifuButton14.CustomizableEdges = borderEdges42;
+            this.bunifuButton14.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton14.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton14.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton14.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton14.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bunifuButton14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuButton14.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton14.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton14.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton14.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.bunifuButton14.IconMarginLeft = 11;
+            this.bunifuButton14.IconPadding = 10;
+            this.bunifuButton14.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton14.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton14.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton14.IconSize = 25;
+            this.bunifuButton14.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton14.IdleBorderRadius = 1;
+            this.bunifuButton14.IdleBorderThickness = 1;
+            this.bunifuButton14.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton14.IdleIconLeftImage = null;
+            this.bunifuButton14.IdleIconRightImage = null;
+            this.bunifuButton14.IndicateFocus = false;
+            this.bunifuButton14.Location = new System.Drawing.Point(275, 248);
+            this.bunifuButton14.Name = "bunifuButton14";
+            this.bunifuButton14.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton14.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton14.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton14.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton14.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton14.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton14.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton14.OnDisabledState.IconRightImage = null;
+            this.bunifuButton14.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton14.onHoverState.BorderRadius = 1;
+            this.bunifuButton14.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton14.onHoverState.BorderThickness = 1;
+            this.bunifuButton14.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.bunifuButton14.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton14.onHoverState.IconLeftImage = null;
+            this.bunifuButton14.onHoverState.IconRightImage = null;
+            this.bunifuButton14.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton14.OnIdleState.BorderRadius = 1;
+            this.bunifuButton14.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton14.OnIdleState.BorderThickness = 1;
+            this.bunifuButton14.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton14.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton14.OnIdleState.IconLeftImage = null;
+            this.bunifuButton14.OnIdleState.IconRightImage = null;
+            this.bunifuButton14.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton14.OnPressedState.BorderRadius = 1;
+            this.bunifuButton14.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton14.OnPressedState.BorderThickness = 1;
+            this.bunifuButton14.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.bunifuButton14.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton14.OnPressedState.IconLeftImage = null;
+            this.bunifuButton14.OnPressedState.IconRightImage = null;
+            this.bunifuButton14.Size = new System.Drawing.Size(75, 31);
+            this.bunifuButton14.TabIndex = 30;
+            this.bunifuButton14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuButton14.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton14.TextMarginLeft = 0;
+            this.bunifuButton14.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuButton14.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton14.Click += new System.EventHandler(this.bunifuButton14_Click);
+            // 
             // admins
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 366);
+            this.ClientSize = new System.Drawing.Size(813, 366);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel9);
             this.Name = "admins";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admins";
@@ -2302,23 +3047,29 @@ namespace Multicare_pharmacy
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.multiCarePharmacyDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource1)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2462,5 +3213,33 @@ namespace Multicare_pharmacy
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton9;
         private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label53;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton13;
+        private System.Windows.Forms.Label label56;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton12;
+        private System.Windows.Forms.Label label55;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton11;
+        private System.Windows.Forms.Label label54;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton10;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private System.Windows.Forms.BindingSource supplierBindingSource1;
+        private System.Windows.Forms.Panel panel9;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton14;
+        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
     }
 }
