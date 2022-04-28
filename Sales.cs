@@ -64,6 +64,7 @@ namespace Multicare_pharmacy
         {
             addCustomerInstance.Hide();
             this.Close();
+            loginForm.instance().Show();
         }
     }
 }

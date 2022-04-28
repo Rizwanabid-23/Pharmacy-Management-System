@@ -165,8 +165,7 @@ namespace Multicare_pharmacy
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            loginForm loginForm = new loginForm();
-            loginForm.Show();
+            loginForm.instance().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -417,6 +416,12 @@ namespace Multicare_pharmacy
             panel9.Hide();
             panel2.Show();
             panel2.BringToFront();
+        }
+
+        private void bunifuButton13_Click(object sender, EventArgs e)
+        {
+            report4 report4 = new report4();
+            report4.Show();
         }
     }
 }

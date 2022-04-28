@@ -73,6 +73,16 @@ namespace Multicare_pharmacy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1275720974_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1275720974-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_black_linear_gradients_transparent_png_image_2484455 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-black-linear-gradients-transparent-png-image_2484455", resourceCulture);

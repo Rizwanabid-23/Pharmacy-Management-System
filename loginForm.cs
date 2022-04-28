@@ -14,9 +14,19 @@ namespace Multicare_pharmacy
 {
     public partial class loginForm : Form
     {
+        private static loginForm loginFormInstance;
+        
         public loginForm()
         {
             InitializeComponent();
+        }
+        public static loginForm instance()
+        {
+            if (loginFormInstance == null)
+            {
+                loginFormInstance = new loginForm();
+            }
+            return loginFormInstance;
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -24,8 +34,8 @@ namespace Multicare_pharmacy
             try
             {
 
-                string username = textBox1.Text;
-                string pin = textBox2.Text;
+                string username = TextBox1.Text;
+                string pin = TextBox2.Text;
                 List<string> check = checker(username, pin);
                 if (check[0] == "admin")
                 {
@@ -39,6 +49,7 @@ namespace Multicare_pharmacy
                 {
                     Sales sales = new Sales(check[1], check[2]);
                     sales.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -91,8 +102,21 @@ namespace Multicare_pharmacy
 
         public void clearFields()
         {
-            this.textBox1.Text = String.Empty;
-            this.textBox2.Text = String.Empty;
+            this.TextBox1.Text = String.Empty;
+            this.TextBox2.Text = String.Empty;
+        }
+
+        private void closeBTN_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                bunifuButton1_Click(sender, e);
+            }
         }
     }
 }
