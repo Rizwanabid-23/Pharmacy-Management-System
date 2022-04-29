@@ -118,6 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="getReport.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGsAAAAnCAYAAAAIJbYbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dExEYAwAMBAlNQy+EMGewsCENDc/fBTxhzj
+        mve41mJ38/5m/QV2ZFaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaI
+        WSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVcoxzPn+BzZzzeQHzq4/c6sp30wAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="signOutButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGsAAAAnCAYAAAAIJbYbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dExEYAwAMBAlNQy+EMGewsCENDc/fBTxhzj
+        mve41mJ38/5m/QV2ZFaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaI
+        WSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVcoxzPn+BzZzzeQHzq4/c6sp30wAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <data name="tab01.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADEAAAAmCAYAAABtT3M/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -140,15 +158,6 @@
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVFhH7c8xEQAgDMBAlGAZ/CGDvQUBCEi5DD9lSusz
         Vp+ZdcW6E69QixMUTlA4QeEEhRMUTlA4QeEEhRMUTlA4QeEEhRMUTlA4QeEEhRMUn0yM2K9Qxoh9AJ0H
         b8AmOAkrAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="signOutButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGsAAAAnCAYAAAAIJbYbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVHhe7dExEYAwAMBAlNQy+EMGewsCENDc/fBTxhzj
-        mve41mJ38/5m/QV2ZFaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaI
-        WSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVYlaIWSFmhZgVcoxzPn+BzZzzeQHzq4/c6sp30wAAAABJRU5E
-        rkJggg==
 </value>
   </data>
 </root>

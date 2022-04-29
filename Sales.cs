@@ -17,12 +17,14 @@ namespace Multicare_pharmacy
         Forms.SalesPanel screen03;
         Forms.AddCustomer addCustomerInstance = Forms.AddCustomer.instance();
         private Form currentPanel;
+        int currentEmployee;
         public Sales(string EID, string EName)
         {
             InitializeComponent();
             screen01 = new Forms.SalesPanel("Session 01", EID, EName);
             screen02 = new Forms.SalesPanel("Session 02", EID, EName);
             screen03 = new Forms.SalesPanel("Session 03", EID, EName);
+            currentEmployee = int.Parse(EID);
         }
 
         private void openNextPanel(Form nextPanel, object sender)
@@ -65,6 +67,11 @@ namespace Multicare_pharmacy
             addCustomerInstance.Hide();
             this.Close();
             loginForm.instance().Show();
+        }
+
+        private void getReport_Click(object sender, EventArgs e)
+        {
+            new employeeSalesForm(currentEmployee).ShowDialog();
         }
     }
 }

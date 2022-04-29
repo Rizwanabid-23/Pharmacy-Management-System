@@ -397,12 +397,12 @@ namespace Multicare_pharmacy.Forms
             this.closeBTN.AutoEllipsis = false;
             this.closeBTN.Cursor = System.Windows.Forms.Cursors.Default;
             this.closeBTN.CursorType = System.Windows.Forms.Cursors.Default;
-            this.closeBTN.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.closeBTN.Font = new System.Drawing.Font("The Bold Font", 20.25F, System.Drawing.FontStyle.Bold);
             this.closeBTN.ForeColor = System.Drawing.Color.Black;
-            this.closeBTN.Location = new System.Drawing.Point(292, 12);
+            this.closeBTN.Location = new System.Drawing.Point(304, 12);
             this.closeBTN.Name = "closeBTN";
             this.closeBTN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.closeBTN.Size = new System.Drawing.Size(18, 37);
+            this.closeBTN.Size = new System.Drawing.Size(18, 34);
             this.closeBTN.TabIndex = 8;
             this.closeBTN.Text = "X";
             this.closeBTN.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
