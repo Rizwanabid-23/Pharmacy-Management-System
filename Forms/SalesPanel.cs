@@ -47,13 +47,12 @@ namespace Multicare_pharmacy.Forms
             {
                 SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
                 beginCommand.ExecuteNonQuery();
-                if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && CID.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
+                if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
                 {
                     int PIdCheck;
                     int QuantityCheck;
                     int amountRecievedCheck;
-                    int CIDCheck;
-                    if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && int.TryParse(CID.Text, out CIDCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
+                    if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
                     {
                         try
                         {
@@ -75,9 +74,17 @@ namespace Multicare_pharmacy.Forms
                         }
                         try
                         {
+                            int CIDCheck;
                             SqlCommand command = new SqlCommand("spUpdateBill", connection);
                             command.CommandType = CommandType.StoredProcedure;
-                            command.Parameters.AddWithValue("@CustomerID", CID.Text);
+                            if (CID.Text == String.Empty)
+                            {
+                                command.Parameters.AddWithValue("@CustomerID", DBNull.Value);
+                            }
+                            else if (int.TryParse(CID.Text, out CIDCheck))
+                            {
+                                command.Parameters.AddWithValue("@CustomerID", CIDCheck);
+                            }
                             command.Parameters.AddWithValue("@EmployeeID", employeeID.Text);
                             command.Parameters.AddWithValue("@OrderDate", DateTime.Today);
                             command.ExecuteNonQuery();
@@ -117,6 +124,15 @@ namespace Multicare_pharmacy.Forms
                                 command.Parameters.AddWithValue("@PaymentType", paymentType);
                                 command.ExecuteNonQuery();
                             }
+                            SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
+                            commitCommand.ExecuteNonQuery();
+                            Decimal TotalDue = mergedDataTable.AsEnumerable().Sum(dr => dr.Field<Decimal>("Total"));
+                            MessageBox.Show("Net Total: " + TotalDue.ToString() + "\n" +
+                                            "Cash: " + amountRecieved.Text + "\n" +
+                                            "Balance: " + (int.Parse(amountRecieved.Text) - TotalDue).ToString(), "Total Bill");
+                            mergedDataTable.Clear();
+                            detailsDGV.DataSource = null;
+                            clearFields();
                         }
                         catch (Exception ex)
                         {
@@ -125,18 +141,13 @@ namespace Multicare_pharmacy.Forms
                     }
                     else
                     {
-                        MessageBox.Show("Please enter correct numeric Product ID\n OR Please check the Quantity value");
+                        MessageBox.Show("Error! \nMake sure you have entered correct values.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Error");
+                    MessageBox.Show("Error! \nMake sure you have not leave the required fields empty.");
                 }
-                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
-                commitCommand.ExecuteNonQuery();
-                mergedDataTable.Clear();
-                detailsDGV.DataSource = null;
-                clearFields();
             }
             catch
             {
@@ -155,18 +166,25 @@ namespace Multicare_pharmacy.Forms
                     int Quantity;
                     if (int.TryParse(productID.Text, out PId) && (int.TryParse(packs.Text, out Quantity) || int.TryParse(tabQuantity.Text, out Quantity)))
                     {
-                        try
+                        if (Quantity > 0)
                         {
-                            DataRow dr = dt.NewRow();
-                            dr["ID"] = PId;
-                            dr["Quantity"] = Quantity;
-                            dt.Rows.Add(dr);
+                            try
+                            {
+                                DataRow dr = dt.NewRow();
+                                dr["ID"] = PId;
+                                dr["Quantity"] = Quantity;
+                                dt.Rows.Add(dr);
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error! \nQuantity should be greater than 0.");
                         }
 
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
 
                         var connection = Configuration.getInstance().getConnection();
                         try
@@ -177,7 +195,6 @@ namespace Multicare_pharmacy.Forms
                             mergedDataTable.Merge(mergeDataTable(dataTable, dt));
                             DataView dataView = new DataView(mergedDataTable);
                             DataTable filteredTable = dataView.ToTable(false, "ID", "ProductName", "SalePrice", "Quantity", "Discount", "Total");
-                            //filteredTable.Columns["Marks"].ColumnName = "SubjectMarks";
                             if (filteredTable.Rows.Count != 0)
                             {
                                 detailsDGV.DataSource = filteredTable;
@@ -244,7 +261,7 @@ namespace Multicare_pharmacy.Forms
             for (int i = 0; i < dt1.Rows.Count; i++)
             {
                 dt1.Rows[i]["Quantity"] = dt2.Rows[i]["Quantity"];
-                dt1.Rows[i]["Total"] = int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString());
+                dt1.Rows[i]["Total"] = (int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString())) - (int.Parse(dt1.Rows[i]["Discount"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString()));
             }
             return dt1;
         }

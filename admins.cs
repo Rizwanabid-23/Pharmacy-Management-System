@@ -534,6 +534,9 @@ namespace Multicare_pharmacy
             for(int i=1;i<month_list.Count;i++)
             {
                 if((string)month_list[i]==months)
+            for (int i = 1; i < month_list.Count; i++)
+            {
+                if ((string)month_list[i] == months)
                 {
                     month = i;
                 }
@@ -541,6 +544,7 @@ namespace Multicare_pharmacy
 
             var con = Configuration.getInstance().getConnection();
             SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" +year + "' ", con);
+            SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" + year + "' ", con);
 
             cmd.ExecuteNonQuery();
             report1 report1 = new report1();

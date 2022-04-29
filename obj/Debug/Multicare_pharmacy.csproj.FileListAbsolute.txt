@@ -100,3 +100,7 @@ D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.report4.resourc
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.report2.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.report3.resources
 D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.report1.resources
+D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.report2.resources
+D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.report3.resources
+D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.report1.resources
+D:\Softwares\GitRepos\dbfinalgid-10\obj\Debug\Multicare_pharmacy.employeeSalesForm.resources

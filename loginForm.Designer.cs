@@ -46,22 +46,24 @@ namespace Multicare_pharmacy
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.TextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.TextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // closeBTN
             // 
             this.closeBTN.AllowParentOverrides = false;
-            this.closeBTN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.closeBTN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.closeBTN.AutoEllipsis = false;
             this.closeBTN.Cursor = System.Windows.Forms.Cursors.Default;
             this.closeBTN.CursorType = System.Windows.Forms.Cursors.Default;
-            this.closeBTN.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.closeBTN.Font = new System.Drawing.Font("The Bold Font", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeBTN.ForeColor = System.Drawing.Color.Black;
-            this.closeBTN.Location = new System.Drawing.Point(327, 12);
+            this.closeBTN.Location = new System.Drawing.Point(323, 12);
             this.closeBTN.Name = "closeBTN";
             this.closeBTN.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.closeBTN.Size = new System.Drawing.Size(18, 37);
+            this.closeBTN.Size = new System.Drawing.Size(18, 34);
             this.closeBTN.TabIndex = 13;
             this.closeBTN.Text = "X";
             this.closeBTN.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -71,14 +73,14 @@ namespace Multicare_pharmacy
             // sessionCode
             // 
             this.sessionCode.AllowParentOverrides = false;
-            this.sessionCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.sessionCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sessionCode.AutoEllipsis = false;
             this.sessionCode.Cursor = System.Windows.Forms.Cursors.Default;
             this.sessionCode.CursorType = System.Windows.Forms.Cursors.Default;
             this.sessionCode.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.sessionCode.ForeColor = System.Drawing.Color.Black;
-            this.sessionCode.Location = new System.Drawing.Point(63, 165);
+            this.sessionCode.Location = new System.Drawing.Point(63, 161);
             this.sessionCode.Name = "sessionCode";
             this.sessionCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.sessionCode.Size = new System.Drawing.Size(231, 32);
@@ -139,7 +141,7 @@ namespace Multicare_pharmacy
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(128, 332);
+            this.bunifuButton1.Location = new System.Drawing.Point(128, 312);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.OnDisabledState.BorderRadius = 1;
@@ -331,21 +333,33 @@ namespace Multicare_pharmacy
             this.TextBox2.WordWrap = true;
             this.TextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox2_KeyDown);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Multicare_pharmacy.Properties.Resources.istockphoto_1275720974_612x612;
+            this.pictureBox1.Location = new System.Drawing.Point(102, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(357, 417);
+            this.Controls.Add(this.sessionCode);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TextBox2);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.closeBTN);
-            this.Controls.Add(this.sessionCode);
             this.Controls.Add(this.bunifuButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,6 +373,7 @@ namespace Multicare_pharmacy
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuTextBox TextBox2;
         private Bunifu.UI.WinForms.BunifuTextBox TextBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

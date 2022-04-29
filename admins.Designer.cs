@@ -1684,6 +1684,7 @@ namespace Multicare_pharmacy
             this.button1.Location = new System.Drawing.Point(36, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 30);
+            this.button1.Size = new System.Drawing.Size(102, 30);
             this.button1.TabIndex = 21;
             this.button1.Text = "Sign out";
             this.button1.UseVisualStyleBackColor = false;
@@ -1700,6 +1701,7 @@ namespace Multicare_pharmacy
             this.button2.Location = new System.Drawing.Point(36, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 36);
+            this.button2.Size = new System.Drawing.Size(102, 36);
             this.button2.TabIndex = 22;
             this.button2.Text = "Add new Employee";
             this.button2.UseVisualStyleBackColor = false;
@@ -1715,6 +1717,7 @@ namespace Multicare_pharmacy
             this.button3.Location = new System.Drawing.Point(36, 137);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 27);
+            this.button3.Size = new System.Drawing.Size(102, 27);
             this.button3.TabIndex = 23;
             this.button3.Text = "Add new Product";
             this.button3.UseVisualStyleBackColor = false;
@@ -1730,6 +1733,7 @@ namespace Multicare_pharmacy
             this.button4.Location = new System.Drawing.Point(36, 45);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(101, 36);
+            this.button4.Size = new System.Drawing.Size(102, 36);
             this.button4.TabIndex = 24;
             this.button4.Text = "Edit Employee details";
             this.button4.UseVisualStyleBackColor = false;
@@ -1745,6 +1749,7 @@ namespace Multicare_pharmacy
             this.button5.Location = new System.Drawing.Point(36, 170);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(101, 36);
+            this.button5.Size = new System.Drawing.Size(102, 36);
             this.button5.TabIndex = 25;
             this.button5.Text = "Edit Product details";
             this.button5.UseVisualStyleBackColor = false;
@@ -1760,6 +1765,7 @@ namespace Multicare_pharmacy
             this.button6.Location = new System.Drawing.Point(36, 87);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(101, 36);
+            this.button6.Size = new System.Drawing.Size(102, 36);
             this.button6.TabIndex = 26;
             this.button6.Text = "Remove Employee";
             this.button6.UseVisualStyleBackColor = false;
@@ -1775,6 +1781,7 @@ namespace Multicare_pharmacy
             this.button7.Location = new System.Drawing.Point(36, 212);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(101, 27);
+            this.button7.Size = new System.Drawing.Size(102, 27);
             this.button7.TabIndex = 27;
             this.button7.Text = "Remove Products";
             this.button7.UseVisualStyleBackColor = false;
@@ -1798,6 +1805,7 @@ namespace Multicare_pharmacy
             this.button8.Location = new System.Drawing.Point(36, 254);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(101, 28);
+            this.button8.Size = new System.Drawing.Size(102, 28);
             this.button8.TabIndex = 29;
             this.button8.Text = "Add Stock";
             this.button8.UseVisualStyleBackColor = false;
@@ -2437,6 +2445,7 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.80952F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.19048F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
@@ -2476,6 +2485,7 @@ namespace Multicare_pharmacy
             this.button9.Location = new System.Drawing.Point(36, 288);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(101, 29);
+            this.button9.Size = new System.Drawing.Size(102, 29);
             this.button9.TabIndex = 30;
             this.button9.Text = "Reports";
             this.button9.UseVisualStyleBackColor = false;
