@@ -10,6 +10,7 @@ namespace Multicare_pharmacy.Forms
     {
         DataTable dt = new DataTable();
         DataTable mergedDataTable = new DataTable();
+        DataTable searchedDataTable = new DataTable();
         Forms.AddCustomer addCustomerInstance = Forms.AddCustomer.instance();
         public SalesPanel(string sessionCode, string EID, string EName)
         {
@@ -42,94 +43,106 @@ namespace Multicare_pharmacy.Forms
         {
             Int32 billID = 0;
             var connection = Configuration.getInstance().getConnection();
-            if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && CID.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
+            try
             {
-                int PIdCheck;
-                int QuantityCheck;
-                int amountRecievedCheck;
-                int CIDCheck;
-                if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && int.TryParse(CID.Text, out CIDCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
+                beginCommand.ExecuteNonQuery();
+                if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && CID.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
                 {
-                    try
+                    int PIdCheck;
+                    int QuantityCheck;
+                    int amountRecievedCheck;
+                    int CIDCheck;
+                    if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && int.TryParse(CID.Text, out CIDCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
                     {
-                        for (int i = 0; i < detailsDGV.Rows.Count; i++)
+                        try
                         {
-                            int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
-                            int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
+                            for (int i = 0; i < detailsDGV.Rows.Count; i++)
+                            {
+                                int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
+                                int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
 
-                            SqlCommand command = new SqlCommand("spUpdateQuantity", connection);
+                                SqlCommand command = new SqlCommand("spUpdateQuantity", connection);
+                                command.CommandType = CommandType.StoredProcedure;
+                                command.Parameters.AddWithValue("@Quantity", Quantity);
+                                command.Parameters.AddWithValue("@PId", PId);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Updation Error 01");
+                        }
+                        try
+                        {
+                            SqlCommand command = new SqlCommand("spUpdateBill", connection);
                             command.CommandType = CommandType.StoredProcedure;
-                            command.Parameters.AddWithValue("@Quantity", Quantity);
-                            command.Parameters.AddWithValue("@PId", PId);
+                            command.Parameters.AddWithValue("@CustomerID", CID.Text);
+                            command.Parameters.AddWithValue("@EmployeeID", employeeID.Text);
+                            command.Parameters.AddWithValue("@OrderDate", DateTime.Today);
                             command.ExecuteNonQuery();
+
+                            SqlCommand getBillID = new SqlCommand("SELECT TOP(1) ID FROM Bill ORDER BY 1 DESC", connection);
+                            billID = (Int32)getBillID.ExecuteScalar();
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Updation Error 01");
-                    }
-                    try
-                    {
-                        SqlCommand command = new SqlCommand("spUpdateBill", connection);
-                        command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("@CustomerID", CID.Text);
-                        command.Parameters.AddWithValue("@EmployeeID", employeeID.Text);
-                        command.Parameters.AddWithValue("@OrderDate", DateTime.Today);
-                        command.ExecuteNonQuery();
-
-                        SqlCommand getBillID = new SqlCommand("SELECT TOP(1) ID FROM Bill ORDER BY 1 DESC", connection);
-                        billID = (Int32)getBillID.ExecuteScalar();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Updation Erorr 02");
-                    }
-                    try
-                    {
-
-                        int paymentType = 5;
-                        if (cardRB.Checked == true)
+                        catch (Exception ex)
                         {
-                            paymentType = 5;
+                            MessageBox.Show(ex.Message, "Updation Erorr 02");
                         }
-                        else if (cashRB.Checked == true)
-                        {
-                            paymentType = 6;
-                        }
-
-                        for (int i = 0; i < detailsDGV.Rows.Count; i++)
+                        try
                         {
 
-                            int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
-                            int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
-                            int Total = int.Parse(detailsDGV.Rows[i].Cells[5].Value.ToString());
-                            SqlCommand command = new SqlCommand("spUpdateBillDetails", connection);
-                            command.CommandType = CommandType.StoredProcedure;
-                            command.Parameters.AddWithValue("@BillID", billID);
-                            command.Parameters.AddWithValue("@ProductID", PId);
-                            command.Parameters.AddWithValue("@Quantity", Quantity);
-                            command.Parameters.AddWithValue("@TotalAmount", Total);
-                            command.Parameters.AddWithValue("@PaymentType", paymentType);
-                            command.ExecuteNonQuery();
+                            int paymentType = 5;
+                            if (cardRB.Checked == true)
+                            {
+                                paymentType = 5;
+                            }
+                            else if (cashRB.Checked == true)
+                            {
+                                paymentType = 6;
+                            }
+
+                            for (int i = 0; i < detailsDGV.Rows.Count; i++)
+                            {
+
+                                int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
+                                int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
+                                int Total = int.Parse(detailsDGV.Rows[i].Cells[5].Value.ToString());
+                                SqlCommand command = new SqlCommand("spUpdateBillDetails", connection);
+                                command.CommandType = CommandType.StoredProcedure;
+                                command.Parameters.AddWithValue("@BillID", billID);
+                                command.Parameters.AddWithValue("@ProductID", PId);
+                                command.Parameters.AddWithValue("@Quantity", Quantity);
+                                command.Parameters.AddWithValue("@TotalAmount", Total);
+                                command.Parameters.AddWithValue("@PaymentType", paymentType);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Updation Error 03");
                         }
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show(ex.Message, "Updation Error 03");
+                        MessageBox.Show("Please enter correct numeric Product ID\n OR Please check the Quantity value");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Please enter correct numeric Product ID\n OR Please check the Quantity value");
+                    MessageBox.Show("Error");
                 }
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
+                commitCommand.ExecuteNonQuery();
+                mergedDataTable.Clear();
+                detailsDGV.DataSource = null;
+                clearFields();
             }
-            else
+            catch
             {
-                MessageBox.Show("Error");
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", connection);
+                rollBackCommand.ExecuteNonQuery();
             }
-            mergedDataTable.Clear();
-            detailsDGV.DataSource = null;
-            clearFields();
         }
 
         private void tabQuantity_KeyDown(object sender, KeyEventArgs e)
@@ -270,6 +283,28 @@ namespace Multicare_pharmacy.Forms
             detailsDGV.Rows.RemoveAt(rowIndex);
             totalProducts.Text = "Total Products: " + detailsDGV.Rows.Count.ToString();
             grandTotal.Text = "Grand Total: " + mergedDataTable.AsEnumerable().Sum(dr => dr.Field<Decimal>("Total")).ToString();
+        }
+
+        private void productName_TextChange(object sender, EventArgs e)
+        {
+            DataView dv = searchedDataTable.DefaultView;
+            dv.RowFilter = "ProductName LIKE '" + productName.Text + "%'";
+            searchDGV.DataSource = dv;
+        }
+
+        private void SalesPanel_Load(object sender, EventArgs e)
+        {
+            var connection = Configuration.getInstance().getConnection();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("Select ID, ProductName FROM Product", connection);
+            dataAdapter.Fill(searchedDataTable);
+            searchDGV.DataSource = searchedDataTable;
+        }
+
+        private void searchDGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowIndex = searchDGV.CurrentCell.RowIndex;
+            productID.Text = searchDGV.Rows[rowIndex].Cells[0].Value.ToString();
+            productName.Text = searchDGV.Rows[rowIndex].Cells[1].Value.ToString();
         }
     }
 }

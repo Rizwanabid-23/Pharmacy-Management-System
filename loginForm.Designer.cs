@@ -44,16 +44,14 @@ namespace Multicare_pharmacy
             this.sessionCode = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.TextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.TextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // closeBTN
             // 
             this.closeBTN.AllowParentOverrides = false;
-            this.closeBTN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.closeBTN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.closeBTN.AutoEllipsis = false;
             this.closeBTN.Cursor = System.Windows.Forms.Cursors.Default;
@@ -73,7 +71,7 @@ namespace Multicare_pharmacy
             // sessionCode
             // 
             this.sessionCode.AllowParentOverrides = false;
-            this.sessionCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.sessionCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sessionCode.AutoEllipsis = false;
             this.sessionCode.Cursor = System.Windows.Forms.Cursors.Default;
@@ -183,22 +181,6 @@ namespace Multicare_pharmacy
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 80;
-            this.bunifuPictureBox1.Image = global::Multicare_pharmacy.Properties.Resources.istockphoto_1275720974_612x612;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(100, 12);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(160, 160);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 14;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // TextBox1
             // 
@@ -353,11 +335,10 @@ namespace Multicare_pharmacy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(357, 417);
             this.Controls.Add(this.TextBox2);
             this.Controls.Add(this.TextBox1);
-            this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.closeBTN);
             this.Controls.Add(this.sessionCode);
             this.Controls.Add(this.bunifuButton1);
@@ -365,7 +346,6 @@ namespace Multicare_pharmacy
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,7 +359,6 @@ namespace Multicare_pharmacy
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuTextBox TextBox2;
         private Bunifu.UI.WinForms.BunifuTextBox TextBox1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }
 

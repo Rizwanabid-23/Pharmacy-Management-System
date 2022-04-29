@@ -20,11 +20,9 @@ namespace Multicare_pharmacy
 
         private void admins_Load(object sender, EventArgs e)
         {
-        //     TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Product' table.You can move, or remove it, as needed.
-            this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
-      //  TODO: This line of code loads data into the 'multiCarePharmacyDataSet.Employee' table.You can move, or remove it, as needed.
-            this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
-            this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
+            //this.productTableAdapter.Fill(this.multiCarePharmacyDataSet.Product);
+            //this.employeeTableAdapter.Fill(this.multiCarePharmacyDataSet.Employee);
+            //this.supplierTableAdapter.Fill(this.multiCarePharmacyDataSet.Supplier);
             listpanel.Add(panel1);
             listpanel.Add(panel2);
             listpanel.Add(panel3);
@@ -77,7 +75,7 @@ namespace Multicare_pharmacy
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-           // int id = int.Parse(textBox1.Text);
+            // int id = int.Parse(textBox1.Text);
             string uname = textBox2.Text;
             string pin = textBox3.Text;
             string fname = textBox4.Text;
@@ -88,8 +86,8 @@ namespace Multicare_pharmacy
             string email = textBox9.Text;
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("exec addEmployee '"+uname+"','"+pin+"','"+fname+"','"+lname+"','"+cnic+"','"+adress+"','"+phone+"','"+email+"' ", con);
-          
+            SqlCommand cmd = new SqlCommand("exec addEmployee '" + uname + "','" + pin + "','" + fname + "','" + lname + "','" + cnic + "','" + adress + "','" + phone + "','" + email + "' ", con);
+
             cmd.ExecuteNonQuery();
             MessageBox.Show("Successfully saved");
         }
@@ -255,7 +253,7 @@ namespace Multicare_pharmacy
 
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("UPDATE Product SET Packs='"+qty+"'+(Select Packs from Product where ID='"+id+"') where ID='"+id+"' ", con);
+            SqlCommand cmd = new SqlCommand("UPDATE Product SET Packs='" + qty + "'+(Select Packs from Product where ID='" + id + "') where ID='" + id + "' ", con);
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("Stock updated successfuly");
@@ -289,7 +287,7 @@ namespace Multicare_pharmacy
             string manufac = textBox26.Text;
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("UPDATE Product SET ProductName='"+pname+"',SalePrice='"+sprice+"',PurchasePrice='"+pprice+"',Category='"+cat+"',ManufacturingDate='"+mfg+"',ExpiryDate='"+exp+"',Packs='"+nop+"',QuantityPerPack='"+qty+"',Legality='"+legal+"',Potency='"+potency+"',Discount='"+disc+"'  where ID='" + pid + "' ", con);
+            SqlCommand cmd = new SqlCommand("UPDATE Product SET ProductName='" + pname + "',SalePrice='" + sprice + "',PurchasePrice='" + pprice + "',Category='" + cat + "',ManufacturingDate='" + mfg + "',ExpiryDate='" + exp + "',Packs='" + nop + "',QuantityPerPack='" + qty + "',Legality='" + legal + "',Potency='" + potency + "',Discount='" + disc + "'  where ID='" + pid + "' ", con);
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("Product Data updated Successfully");
@@ -335,7 +333,7 @@ namespace Multicare_pharmacy
             string name = textBox36.Text;
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Delete from Employee where ID='"+id+"' ", con);
+            SqlCommand cmd = new SqlCommand("Delete from Employee where ID='" + id + "' ", con);
 
             cmd.ExecuteNonQuery();
         }
@@ -408,7 +406,7 @@ namespace Multicare_pharmacy
             string adress = textBox40.Text;
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Exec add_supplier '"+name+"','"+type+"','"+phone+"','"+adress+"' ", con);
+            SqlCommand cmd = new SqlCommand("Exec add_supplier '" + name + "','" + type + "','" + phone + "','" + adress + "' ", con);
 
             cmd.ExecuteNonQuery();
 

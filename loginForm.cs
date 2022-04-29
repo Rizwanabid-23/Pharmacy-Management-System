@@ -15,7 +15,7 @@ namespace Multicare_pharmacy
     public partial class loginForm : Form
     {
         private static loginForm loginFormInstance;
-        
+
         public loginForm()
         {
             InitializeComponent();
@@ -33,16 +33,13 @@ namespace Multicare_pharmacy
         {
             try
             {
-
                 string username = TextBox1.Text;
                 string pin = TextBox2.Text;
                 List<string> check = checker(username, pin);
                 if (check[0] == "admin")
                 {
                     admins admin = new admins();
-                    
                     admin.Show();
-                    
                     this.Hide();
                 }
                 else if (check[0] == "employee")
@@ -81,7 +78,6 @@ namespace Multicare_pharmacy
             else
             {
                 SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Employee where Username='" + uname + "' and PIN='" + pin + "'", con);
-
                 DataTable dt1 = new DataTable();
                 cmd1.Fill(dt1);
 
@@ -113,7 +109,7 @@ namespace Multicare_pharmacy
 
         private void TextBox2_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 bunifuButton1_Click(sender, e);
             }

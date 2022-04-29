@@ -239,12 +239,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="pngtree-gradient-abstract-hexagon-blue-business-border-png-image_5384935.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="pngtree-black-linear-gradients-transparent-png-image_2484455.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="download-icon-add+board+new+plus+icon-1320186882821780394_512.png" />
   </ItemGroup>
   <ItemGroup>
