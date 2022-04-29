@@ -1764,9 +1764,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(37, 333);
+            this.button1.Location = new System.Drawing.Point(36, 333);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 30);
+            this.button1.Size = new System.Drawing.Size(102, 30);
             this.button1.TabIndex = 21;
             this.button1.Text = "Sign out";
             this.button1.UseVisualStyleBackColor = false;
@@ -1780,9 +1780,9 @@ namespace Multicare_pharmacy
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(37, 3);
+            this.button2.Location = new System.Drawing.Point(36, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 36);
+            this.button2.Size = new System.Drawing.Size(102, 36);
             this.button2.TabIndex = 22;
             this.button2.Text = "Add new Employee";
             this.button2.UseVisualStyleBackColor = false;
@@ -1795,9 +1795,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(37, 137);
+            this.button3.Location = new System.Drawing.Point(36, 137);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 27);
+            this.button3.Size = new System.Drawing.Size(102, 27);
             this.button3.TabIndex = 23;
             this.button3.Text = "Add new Product";
             this.button3.UseVisualStyleBackColor = false;
@@ -1810,9 +1810,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(37, 45);
+            this.button4.Location = new System.Drawing.Point(36, 45);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 36);
+            this.button4.Size = new System.Drawing.Size(102, 36);
             this.button4.TabIndex = 24;
             this.button4.Text = "Edit Employee details";
             this.button4.UseVisualStyleBackColor = false;
@@ -1825,9 +1825,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(37, 170);
+            this.button5.Location = new System.Drawing.Point(36, 170);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 36);
+            this.button5.Size = new System.Drawing.Size(102, 36);
             this.button5.TabIndex = 25;
             this.button5.Text = "Edit Product details";
             this.button5.UseVisualStyleBackColor = false;
@@ -1840,9 +1840,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(37, 87);
+            this.button6.Location = new System.Drawing.Point(36, 87);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 36);
+            this.button6.Size = new System.Drawing.Size(102, 36);
             this.button6.TabIndex = 26;
             this.button6.Text = "Remove Employee";
             this.button6.UseVisualStyleBackColor = false;
@@ -1855,9 +1855,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(37, 212);
+            this.button7.Location = new System.Drawing.Point(36, 212);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 27);
+            this.button7.Size = new System.Drawing.Size(102, 27);
             this.button7.TabIndex = 27;
             this.button7.Text = "Remove Products";
             this.button7.UseVisualStyleBackColor = false;
@@ -1878,9 +1878,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(37, 254);
+            this.button8.Location = new System.Drawing.Point(36, 254);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(104, 28);
+            this.button8.Size = new System.Drawing.Size(102, 28);
             this.button8.TabIndex = 29;
             this.button8.Text = "Add Stock";
             this.button8.UseVisualStyleBackColor = false;
@@ -2454,6 +2454,7 @@ namespace Multicare_pharmacy
             this.bunifuButton10.TextMarginLeft = 0;
             this.bunifuButton10.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton10.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton10.Click += new System.EventHandler(this.bunifuButton10_Click);
             // 
             // comboBox13
             // 
@@ -2467,6 +2468,7 @@ namespace Multicare_pharmacy
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(64, 21);
             this.comboBox13.TabIndex = 3;
+            this.comboBox13.Visible = false;
             // 
             // comboBox12
             // 
@@ -2488,6 +2490,7 @@ namespace Multicare_pharmacy
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(101, 21);
             this.comboBox12.TabIndex = 2;
+            this.comboBox12.Visible = false;
             // 
             // label53
             // 
@@ -2495,9 +2498,9 @@ namespace Multicare_pharmacy
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(42, 61);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(149, 18);
+            this.label53.Size = new System.Drawing.Size(253, 18);
             this.label53.TabIndex = 1;
-            this.label53.Text = "Calculate the profit in ";
+            this.label53.Text = "Calculate the profit in the given month";
             // 
             // label1
             // 
@@ -2515,7 +2518,7 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.80952F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.19048F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
@@ -2552,9 +2555,9 @@ namespace Multicare_pharmacy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(37, 288);
+            this.button9.Location = new System.Drawing.Point(36, 288);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(104, 29);
+            this.button9.Size = new System.Drawing.Size(102, 29);
             this.button9.TabIndex = 30;
             this.button9.Text = "Reports";
             this.button9.UseVisualStyleBackColor = false;
@@ -3248,8 +3251,6 @@ namespace Multicare_pharmacy
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton11;
         private System.Windows.Forms.Label label54;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton10;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox12;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.BindingSource supplierBindingSource1;
         private System.Windows.Forms.Panel panel9;
@@ -3265,5 +3266,7 @@ namespace Multicare_pharmacy
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBox12;
     }
 }

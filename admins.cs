@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Multicare_pharmacy
 {
@@ -437,6 +438,43 @@ namespace Multicare_pharmacy
         {
             report2 report2 = new report2();
             report2.Show();
+        }
+
+        private void bunifuButton10_Click(object sender, EventArgs e)
+        {
+            string months = comboBox12.Text;
+            string year = comboBox13.Text;
+            int month=0;
+            
+            ArrayList month_list = new ArrayList();
+            month_list.Add("January");
+            month_list.Add("February");
+            month_list.Add("March");
+            month_list.Add("April");
+            month_list.Add("May");
+            month_list.Add("June");
+            month_list.Add("July");
+            month_list.Add("August");
+            month_list.Add("September");
+            month_list.Add("October");
+            month_list.Add("November");
+            month_list.Add("December");
+
+            for(int i=1;i<month_list.Count;i++)
+            {
+                if((string)month_list[i]==months)
+                {
+                    month = i;
+                }
+            }
+
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" +year + "' ", con);
+
+            cmd.ExecuteNonQuery();
+            report1 report1 = new report1();
+            report1.Show();
+
         }
     }
 }
