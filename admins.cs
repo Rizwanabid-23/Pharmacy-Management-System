@@ -630,17 +630,24 @@ namespace Multicare_pharmacy
 
         private void dgv_cellclick(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = dataGridView1.CurrentCell.RowIndex;
-            Console.WriteLine(dataGridView1.RowCount);
-            comboBox4.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
-            textBox25.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
-            textBox24.Text = dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
-            textBox23.Text = dataGridView1.Rows[rowIndex].Cells[3].Value.ToString();
-            textBox22.Text = dataGridView1.Rows[rowIndex].Cells[4].Value.ToString();
-            textBox21.Text = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
-            textBox20.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
-            textBox19.Text = dataGridView1.Rows[rowIndex].Cells[7].Value.ToString();
-            textBox18.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
+            try
+            {
+                int rowIndex = dataGridView1.CurrentCell.RowIndex;
+                Console.WriteLine(dataGridView1.RowCount);
+                comboBox4.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
+                textBox25.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
+                textBox24.Text = dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
+                textBox23.Text = dataGridView1.Rows[rowIndex].Cells[3].Value.ToString();
+                textBox22.Text = dataGridView1.Rows[rowIndex].Cells[4].Value.ToString();
+                textBox21.Text = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
+                textBox20.Text = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
+                textBox19.Text = dataGridView1.Rows[rowIndex].Cells[7].Value.ToString();
+                textBox18.Text = dataGridView1.Rows[rowIndex].Cells[8].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -653,9 +660,16 @@ namespace Multicare_pharmacy
 
         private void search_user(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = dataGridView2.CurrentCell.RowIndex;
-            comboBox10.Text = dataGridView2.Rows[rowIndex].Cells[0].Value.ToString();
-            textBox36.Text = dataGridView2.Rows[rowIndex].Cells[1].Value.ToString();
+            try
+            {
+                int rowIndex = dataGridView2.CurrentCell.RowIndex;
+                comboBox10.Text = dataGridView2.Rows[rowIndex].Cells[0].Value.ToString();
+                textBox36.Text = dataGridView2.Rows[rowIndex].Cells[1].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void pName_changed(object sender, EventArgs e)
@@ -668,20 +682,27 @@ namespace Multicare_pharmacy
 
         private void pName_search(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = dataGridView3.CurrentCell.RowIndex;
-            comboBox8.Text = dataGridView3.Rows[rowIndex].Cells[0].Value.ToString();
-            textBox33.Text = dataGridView3.Rows[rowIndex].Cells[1].Value.ToString();
-            textBox32.Text = dataGridView3.Rows[rowIndex].Cells[2].Value.ToString();
-            textBox31.Text = dataGridView3.Rows[rowIndex].Cells[3].Value.ToString();
-            comboBox7.Text = dataGridView3.Rows[rowIndex].Cells[4].Value.ToString();
-            //bunifuDatePicker4.Value = (DateTime)dataGridView3.Rows[rowIndex].Cells[5].Value;
-            //bunifuDatePicker3.Value = (DateTime)dataGridView3.Rows[rowIndex].Cells[6].Value;
-            textBox30.Text = dataGridView3.Rows[rowIndex].Cells[5].Value.ToString();
-            textBox29.Text = dataGridView3.Rows[rowIndex].Cells[6].Value.ToString();
-            comboBox6.Text = dataGridView3.Rows[rowIndex].Cells[7].Value.ToString();
-            textBox28.Text = dataGridView3.Rows[rowIndex].Cells[8].Value.ToString();
-            textBox27.Text = dataGridView3.Rows[rowIndex].Cells[9].Value.ToString();
-            comboBox5.Text = dataGridView3.Rows[rowIndex].Cells[10].Value.ToString();
+            try
+            {
+                int rowIndex = dataGridView3.CurrentCell.RowIndex;
+                comboBox8.Text = dataGridView3.Rows[rowIndex].Cells[0].Value.ToString();
+                textBox33.Text = dataGridView3.Rows[rowIndex].Cells[1].Value.ToString();
+                textBox32.Text = dataGridView3.Rows[rowIndex].Cells[2].Value.ToString();
+                textBox31.Text = dataGridView3.Rows[rowIndex].Cells[3].Value.ToString();
+                comboBox7.Text = dataGridView3.Rows[rowIndex].Cells[4].Value.ToString();
+                //bunifuDatePicker4.Value = (DateTime)dataGridView3.Rows[rowIndex].Cells[5].Value;
+                //bunifuDatePicker3.Value = (DateTime)dataGridView3.Rows[rowIndex].Cells[6].Value;
+                textBox30.Text = dataGridView3.Rows[rowIndex].Cells[5].Value.ToString();
+                textBox29.Text = dataGridView3.Rows[rowIndex].Cells[6].Value.ToString();
+                comboBox6.Text = dataGridView3.Rows[rowIndex].Cells[7].Value.ToString();
+                textBox28.Text = dataGridView3.Rows[rowIndex].Cells[8].Value.ToString();
+                textBox27.Text = dataGridView3.Rows[rowIndex].Cells[9].Value.ToString();
+                comboBox5.Text = dataGridView3.Rows[rowIndex].Cells[10].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void pName_Changed(object sender, EventArgs e)
@@ -693,9 +714,16 @@ namespace Multicare_pharmacy
 
         private void dg_click(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = dataGridView4.CurrentCell.RowIndex;
-            comboBox11.Text = dataGridView4.Rows[rowIndex].Cells[0].Value.ToString();
-            textBox37.Text = dataGridView4.Rows[rowIndex].Cells[1].Value.ToString();
+            try
+            {
+                int rowIndex = dataGridView4.CurrentCell.RowIndex;
+                comboBox11.Text = dataGridView4.Rows[rowIndex].Cells[0].Value.ToString();
+                textBox37.Text = dataGridView4.Rows[rowIndex].Cells[1].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void name_change(object sender, EventArgs e)
@@ -707,10 +735,17 @@ namespace Multicare_pharmacy
 
         private void cell_click(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = dataGridView5.CurrentCell.RowIndex;
-            comboBox9.Text = dataGridView5.Rows[rowIndex].Cells[0].Value.ToString();
-            textBox35.Text = dataGridView5.Rows[rowIndex].Cells[1].Value.ToString();
-            // textBox34.Text = dataGridView5.Rows[rowIndex].Cells[2].Value.ToString();
+            try
+            {
+                int rowIndex = dataGridView5.CurrentCell.RowIndex;
+                comboBox9.Text = dataGridView5.Rows[rowIndex].Cells[0].Value.ToString();
+                textBox35.Text = dataGridView5.Rows[rowIndex].Cells[1].Value.ToString();
+                // textBox34.Text = dataGridView5.Rows[rowIndex].Cells[2].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

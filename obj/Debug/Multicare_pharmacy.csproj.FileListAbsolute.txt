@@ -128,3 +128,4 @@ C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\bin\Debug\CrystalDecisions.ReportA
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\bin\Debug\stdole.dll
 C:\Users\rizwa\Documents\GitHub\dbfinalgid-10\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\semester4\db-lab\final\Multicare_pharmacy\obj\Debug\Multicare_pharmacy.employeeSalesForm.resources
