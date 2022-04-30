@@ -531,9 +531,8 @@ namespace Multicare_pharmacy
             month_list.Add("November");
             month_list.Add("December");
 
-            for(int i=1;i<month_list.Count;i++)
-            {
-                if((string)month_list[i]==months)
+            
+             
             for (int i = 1; i < month_list.Count; i++)
             {
                 if ((string)month_list[i] == months)
@@ -544,8 +543,6 @@ namespace Multicare_pharmacy
 
             var con = Configuration.getInstance().getConnection();
             SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" +year + "' ", con);
-            SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" + year + "' ", con);
-
             cmd.ExecuteNonQuery();
             report1 report1 = new report1();
             report1.Show();
@@ -564,7 +561,7 @@ namespace Multicare_pharmacy
             int rowIndex = dataGridView1.CurrentCell.RowIndex;
             comboBox4.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
             textBox25.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
-            textBox24.Text= dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
+            textBox24.Text= (string)dataGridView1.Rows[rowIndex].Cells[2].Value;
             textBox23.Text = dataGridView1.Rows[rowIndex].Cells[3].Value.ToString();
             textBox22.Text = dataGridView1.Rows[rowIndex].Cells[4].Value.ToString();
             textBox21.Text = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
