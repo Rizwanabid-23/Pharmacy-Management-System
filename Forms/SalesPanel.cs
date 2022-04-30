@@ -47,12 +47,10 @@ namespace Multicare_pharmacy.Forms
             {
                 SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
                 beginCommand.ExecuteNonQuery();
-                if (productID.Text != String.Empty && amountRecieved.Text != String.Empty && (packs.Text != String.Empty || tabQuantity.Text != String.Empty) && (cashRB.Checked != true || cardRB.Checked != true))
+                if (amountRecieved.Text != String.Empty && (cashRB.Checked != true || cardRB.Checked != true))
                 {
-                    int PIdCheck;
-                    int QuantityCheck;
                     int amountRecievedCheck;
-                    if (int.TryParse(productID.Text, out PIdCheck) && int.TryParse(amountRecieved.Text, out amountRecievedCheck) && (int.TryParse(packs.Text, out QuantityCheck) || int.TryParse(tabQuantity.Text, out QuantityCheck)))
+                    if (int.TryParse(amountRecieved.Text, out amountRecievedCheck))
                     {
                         try
                         {
@@ -111,7 +109,6 @@ namespace Multicare_pharmacy.Forms
 
                             for (int i = 0; i < detailsDGV.Rows.Count; i++)
                             {
-
                                 int PId = int.Parse(detailsDGV.Rows[i].Cells[0].Value.ToString());
                                 int Quantity = int.Parse(detailsDGV.Rows[i].Cells[3].Value.ToString());
                                 int Total = int.Parse(detailsDGV.Rows[i].Cells[5].Value.ToString());
@@ -127,9 +124,17 @@ namespace Multicare_pharmacy.Forms
                             SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
                             commitCommand.ExecuteNonQuery();
                             Decimal TotalDue = mergedDataTable.AsEnumerable().Sum(dr => dr.Field<Decimal>("Total"));
-                            MessageBox.Show("Net Total: " + TotalDue.ToString() + "\n" +
-                                            "Cash: " + amountRecieved.Text + "\n" +
-                                            "Balance: " + (int.Parse(amountRecieved.Text) - TotalDue).ToString(), "Total Bill");
+                            if (cashRB.Checked)
+                            {
+                                MessageBox.Show("Net Total: " + TotalDue.ToString() + "\n" +
+                                           "Cash: " + amountRecieved.Text + "\n" +
+                                           "Balance: " + (int.Parse(amountRecieved.Text) - TotalDue).ToString(), "Total Bill");
+                            }
+                            else if (cardRB.Checked)
+                            {
+                                MessageBox.Show("Payment Successfull");
+                            }
+
                             mergedDataTable.Clear();
                             detailsDGV.DataSource = null;
                             clearFields();
@@ -209,8 +214,9 @@ namespace Multicare_pharmacy.Forms
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message);
+                            MessageBox.Show("ex.Message");
                         }
+
                     }
                     else
                     {
@@ -261,7 +267,14 @@ namespace Multicare_pharmacy.Forms
             for (int i = 0; i < dt1.Rows.Count; i++)
             {
                 dt1.Rows[i]["Quantity"] = dt2.Rows[i]["Quantity"];
-                dt1.Rows[i]["Total"] = (int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString())) - (int.Parse(dt1.Rows[i]["Discount"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString()));
+                if (dt1.Rows[i]["Discount"] != DBNull.Value)
+                {
+                    dt1.Rows[i]["Total"] = (int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString())) - (int.Parse(dt1.Rows[i]["Discount"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString()));
+                }
+                else
+                {
+                    dt1.Rows[i]["Total"] = (int.Parse(dt1.Rows[i]["SalePrice"].ToString()) * int.Parse(dt2.Rows[i]["Quantity"].ToString()));
+                }
             }
             return dt1;
         }

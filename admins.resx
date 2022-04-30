@@ -140,12 +140,6 @@
   <metadata name="supplierBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>558, 95</value>
   </metadata>
-  <metadata name="supplierBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>558, 95</value>
-  </metadata>
-  <metadata name="multiCarePharmacyDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
   <metadata name="multiCarePharmacyDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
@@ -197,9 +191,6 @@
   <metadata name="productBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>197, 95</value>
   </metadata>
-  <metadata name="productBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>197, 95</value>
-  </metadata>
   <data name="bunifuButton6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAAAfCAYAAABwH0oUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -208,9 +199,6 @@
         DIwMjAyMDIy2sc/rLfDBPq8bba3jUieY4IoAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="supplierBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>332, 17</value>
-  </metadata>
   <metadata name="supplierBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>332, 17</value>
   </metadata>
@@ -228,9 +216,6 @@
         DIwMjAyMDIy2sc/rLfDBPq8bba3jUieY4IoAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="employeeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>674, 17</value>
-  </metadata>
   <metadata name="supplierTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>506, 17</value>
   </metadata>
@@ -248,9 +233,6 @@
         YHLA5MA29nm9BT6yz+sG83ADcVTmRy0AAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="productBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>536, 56</value>
-  </metadata>
   <metadata name="productBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>536, 56</value>
   </metadata>
@@ -302,9 +284,6 @@
         1BynoIuaYwEri+Xfb1cuVwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="productBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
   <metadata name="productBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
   </metadata>

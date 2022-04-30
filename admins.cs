@@ -59,25 +59,20 @@ namespace Multicare_pharmacy
             dataAdapter.Fill(searchedDataTable);
             dataGridView1.DataSource = searchedDataTable;
 
-
-
             var connection2 = Configuration.getInstance().getConnection();
             SqlDataAdapter dataAdapter2 = new SqlDataAdapter("Select ID, Username,PIN,FirstName,LastName,CNIC,Address,Phone,Email FROM Employee", connection2);
             dataAdapter2.Fill(nameTable);
             dataGridView2.DataSource = nameTable;
-
 
             var connection3 = Configuration.getInstance().getConnection();
             SqlDataAdapter dataAdapter3 = new SqlDataAdapter("Select P.ID,P.ProductName,P.SalePrice,P.PurchasePrice,P.Category,P.Packs,P.QuantityPerPack,P.Legality,P.Potency,P.Discount,PS.SupplierID FROM Product P join ProductSupplier PS on P.ID=PS.ProductID", connection3);
             dataAdapter3.Fill(pname_change);
             dataGridView3.DataSource = pname_change;
 
-
             var connection4 = Configuration.getInstance().getConnection();
             SqlDataAdapter dataAdapter4 = new SqlDataAdapter("Select P.ID,P.ProductName,P.SalePrice,P.PurchasePrice,P.Category,P.ManufacturingDate,P.ExpiryDate,P.Packs,P.QuantityPerPack,P.Legality,P.Potency,P.Discount FROM Product P", connection4);
             dataAdapter4.Fill(pname_change1);
             dataGridView4.DataSource = pname_change1;
-
 
             var connection5 = Configuration.getInstance().getConnection();
             SqlDataAdapter dataAdapter5 = new SqlDataAdapter("Select P.ID,P.ProductName,P.Packs,P.QuantityPerPack FROM Product P", connection5);
@@ -113,6 +108,7 @@ namespace Multicare_pharmacy
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            var connection = Configuration.getInstance().getConnection();
             // int id = int.Parse(textBox1.Text);
             string uname = textBox2.Text;
             string pin = textBox3.Text;
@@ -122,12 +118,23 @@ namespace Multicare_pharmacy
             string adress = textBox7.Text;
             string phone = textBox8.Text;
             string email = textBox9.Text;
-
-            var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("exec addEmployee '" + uname + "','" + pin + "','" + fname + "','" + lname + "','" + cnic + "','" + adress + "','" + phone + "','" + email + "' ", con);
-
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Successfully saved");
+            try
+            {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", connection);
+                beginCommand.ExecuteNonQuery();
+                var con = Configuration.getInstance().getConnection();
+                SqlCommand cmd = new SqlCommand("exec addEmployee '" + uname + "','" + pin + "','" + fname + "','" + lname + "','" + cnic + "','" + adress + "','" + phone + "','" + email + "' ", con);
+                cmd.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", connection);
+                commitCommand.ExecuteNonQuery();
+                MessageBox.Show("Successfully saved");
+            }
+            catch (Exception ex)
+            {
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", connection);
+                rollBackCommand.ExecuteNonQuery();
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
@@ -141,8 +148,9 @@ namespace Multicare_pharmacy
             string category = comboBox1.Text;
             float sprice = float.Parse(textBox11.Text);
             float pprice = float.Parse(textBox12.Text);
-            string mfg = Convert.ToDateTime(bunifuDatePicker1.Text).ToString();
-            string exp = Convert.ToDateTime(bunifuDatePicker2.Text).ToString();
+            DateTime mfg = Convert.ToDateTime(bunifuDatePicker1.Text);
+            DateTime exp = Convert.ToDateTime(bunifuDatePicker2.Text);
+            var con = Configuration.getInstance().getConnection();
 
             if (textBox16.Text != "")
             {
@@ -179,38 +187,34 @@ namespace Multicare_pharmacy
             {
                 cat = 2;
             }
+            try
+            {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                beginCommand.ExecuteNonQuery();
+                SqlCommand cmd1 = new SqlCommand("Insert into ProductManufacturer values (@ProductName,@Manufacturer)", con);
+                cmd1.Parameters.AddWithValue("@ProductName", name);
+                cmd1.Parameters.AddWithValue("@Manufacturer", manufacturer);
+                cmd1.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("exec add_product '" + name + "' ,'" + sprice + "' ,'" + pprice + "'  ,'" + cat + "','" + (mfg) + "','" + (exp) + "','" + nop + "','" + qp + "','" + leg + "','" + potency + "','" + discount + "','" + ParameterDirection.Output + "'   ", con);
+                cmd.ExecuteNonQuery();
 
+                string id = cmd.Parameters["@id"].Value.ToString();
 
-            var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd1 = new SqlCommand("Insert into ProductManufacturer values (@ProductName,@Manufacturer)", con);
-            cmd1.Parameters.AddWithValue("@ProductName", name);
-            cmd1.Parameters.AddWithValue("@Manufacturer", manufacturer);
-            cmd1.ExecuteNonQuery();
+                SqlCommand cmd2 = new SqlCommand("Insert into ProductSupplier values (@ProductID,@SupplierID)", con);
+                cmd2.Parameters.AddWithValue("@ProductID", id);
+                cmd2.Parameters.AddWithValue("@SupplierID", sid);
+                cmd2.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                commitCommand.ExecuteNonQuery();
+                MessageBox.Show("Successfully saved");
+            }
+            catch (Exception ex)
+            {
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                rollBackCommand.ExecuteNonQuery();
+                MessageBox.Show(ex.Message);
+            }
 
-            SqlCommand cmd = new SqlCommand("exec add_product '"+name+"' ,'"+sprice+"' ,'"+pprice+"'  ,'"+cat+"','"+Convert.ToDateTime( mfg)+"','"+Convert.ToDateTime( exp)+"','"+nop+"','"+qp+"','"+leg+"','"+potency+"','"+discount+"','"+ ParameterDirection.Output+"'   ", con);
-            
-            //cmd.Parameters.AddWithValue("@SalePrice", sprice);
-            //cmd.Parameters.AddWithValue("@PurchasePrice", pprice);
-            //cmd.Parameters.AddWithValue("@Category", cat);
-            //cmd.Parameters.AddWithValue("@ManufacturingDate", mfg);
-            //cmd.Parameters.AddWithValue("@ExpiryDate", exp);
-            //cmd.Parameters.AddWithValue("@Packs", nop);
-            //cmd.Parameters.AddWithValue("@QuantityPerPack", qp);
-            //cmd.Parameters.AddWithValue("@Legality", leg);
-            //cmd.Parameters.AddWithValue("@Potency", potency);
-            //cmd.Parameters.AddWithValue("@Discount", discount);
-            //cmd.Parameters.Add("@id", SqlDbType.Int).Direction = ParameterDirection.Output;
-            cmd.ExecuteNonQuery();
-            
-            string id = cmd.Parameters["@id"].Value.ToString();
-
-            SqlCommand cmd2 = new SqlCommand("Insert into ProductSupplier values (@ProductID,@SupplierID)", con);
-            cmd2.Parameters.AddWithValue("@ProductID",id );
-            cmd2.Parameters.AddWithValue("@SupplierID", sid);
-            cmd2.ExecuteNonQuery();
-
-
-            MessageBox.Show("Successfully saved");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -303,13 +307,24 @@ namespace Multicare_pharmacy
         {
             string id = comboBox9.Text;
             string qty = textBox34.Text;
-
-
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("UPDATE Product SET Packs='" + qty + "'+(Select Packs from Product where ID='" + id + "') where ID='" + id + "' ", con);
 
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Stock updated successfuly");
+            try
+            {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                beginCommand.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("UPDATE Product SET Packs='" + qty + "'+(Select Packs from Product where ID='" + id + "') where ID='" + id + "' ", con);
+                cmd.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                commitCommand.ExecuteNonQuery();
+                MessageBox.Show("Stock updated successfuly");
+            }
+            catch (Exception ex)
+            {
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                rollBackCommand.ExecuteNonQuery();
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void bunifuButton6_Click(object sender, EventArgs e)
@@ -320,11 +335,11 @@ namespace Multicare_pharmacy
             float pprice = float.Parse(textBox31.Text);
             string category = comboBox7.Text;
             int cat = 0;
-            if (category == "Medicine" || category=="1")
+            if (category == "Medicine" || category == "1")
             {
                 cat = 1;
             }
-            else if (category == "Day-to-Day" || category=="2")
+            else if (category == "Day-to-Day" || category == "2")
             {
                 cat = 2;
             }
@@ -337,16 +352,27 @@ namespace Multicare_pharmacy
             float potency = float.Parse(textBox28.Text);
             float disc = float.Parse(textBox27.Text);
             int sid = int.Parse(comboBox5.Text);
-            
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("exec sp_updateProduct '"+pid+"','"+pname+"','"+sprice+"','"+pprice+"','"+cat+"','"+nop+"','"+qty+"','"+legal+"','"+potency+"','"+disc+"' ", con);
+            try
+            {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                beginCommand.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("exec sp_updateProduct '" + pid + "','" + pname + "','" + sprice + "','" + pprice + "','" + cat + "','" + nop + "','" + qty + "','" + legal + "','" + potency + "','" + disc + "' ", con);
+                cmd.ExecuteNonQuery();
+                SqlCommand cmd1 = new SqlCommand("UPDATE ProductSupplier SET SupplierID='" + sid + "'  where ProductID='" + pid + "' ", con);
+                cmd1.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                commitCommand.ExecuteNonQuery();
+                MessageBox.Show("Product Data updated Successfully");
+            }
+            catch (Exception ex)
+            {
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                rollBackCommand.ExecuteNonQuery();
+                MessageBox.Show(ex.Message);
+            }
 
-            cmd.ExecuteNonQuery();
-            SqlCommand cmd1 = new SqlCommand("UPDATE ProductSupplier SET SupplierID='" + sid + "'  where ProductID='" + pid + "' ", con);
-
-            cmd1.ExecuteNonQuery();
-            MessageBox.Show("Product Data updated Successfully");
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
@@ -362,12 +388,23 @@ namespace Multicare_pharmacy
                 string adress = textBox20.Text;
                 string phone = textBox19.Text;
                 string email = textBox18.Text;
-
                 var con = Configuration.getInstance().getConnection();
-                SqlCommand cmd = new SqlCommand("UPDATE Employee SET Username='" + uname + "',PIN='" + pin + "',FirstName='" + fname + "',LastName='" + lname + "',CNIC='" + cnic + "',Address='" + adress + "',Phone='" + phone + "',Email='" + email + "'  where ID='" + eid + "' ", con);
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Succesfully updated employee data");
+                try
+                {
+                    SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                    beginCommand.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand("UPDATE Employee SET Username='" + uname + "',PIN='" + pin + "',FirstName='" + fname + "',LastName='" + lname + "',CNIC='" + cnic + "',Address='" + adress + "',Phone='" + phone + "',Email='" + email + "'  where ID='" + eid + "' ", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Succesfully updated employee data");
+                    SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                    commitCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                    rollBackCommand.ExecuteNonQuery();
+                    MessageBox.Show(ex.Message);
+                }
             }
             catch
             {
@@ -399,10 +436,22 @@ namespace Multicare_pharmacy
                 string name = textBox36.Text;
 
                 var con = Configuration.getInstance().getConnection();
-                SqlCommand cmd = new SqlCommand("Delete from Employee where ID='" + id + "' ", con);
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Employee deleted successfully");
+                try
+                {
+                    SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                    beginCommand.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand("Delete from Employee where ID='" + id + "' ", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee deleted successfully");
+                    SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                    commitCommand.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                    rollBackCommand.ExecuteNonQuery();
+                    MessageBox.Show(ex.Message);
+                }
             }
             catch
             {
@@ -430,11 +479,24 @@ namespace Multicare_pharmacy
         {
             int id = int.Parse(comboBox11.Text);
             string name = textBox37.Text;
-
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("exec delete_product'" + id + "' ", con);
 
-            cmd.ExecuteNonQuery();
+            try
+            {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                beginCommand.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("exec delete_product'" + id + "' ", con);
+                cmd.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                commitCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                rollBackCommand.ExecuteNonQuery();
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -476,13 +538,23 @@ namespace Multicare_pharmacy
             string type = comboBox14.Text;
             string phone = textBox39.Text;
             string adress = textBox40.Text;
-
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Exec add_supplier '" + name + "','" + type + "','" + phone + "','" + adress + "' ", con);
 
-            cmd.ExecuteNonQuery();
-
-
+            try
+            {
+                SqlCommand beginCommand = new SqlCommand("BEGIN TRANSACTION", con);
+                beginCommand.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("Exec add_supplier '" + name + "','" + type + "','" + phone + "','" + adress + "' ", con);
+                cmd.ExecuteNonQuery();
+                SqlCommand commitCommand = new SqlCommand("COMMIT TRANSACTION", con);
+                commitCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                SqlCommand rollBackCommand = new SqlCommand("ROLLBACK TRANSACTION", con);
+                rollBackCommand.ExecuteNonQuery();
+                MessageBox.Show(ex.Message);
+            }
             panel9.Hide();
             panel2.Show();
             panel2.BringToFront();
@@ -515,8 +587,8 @@ namespace Multicare_pharmacy
         {
             string months = comboBox12.Text;
             string year = comboBox13.Text;
-            int month=0;
-            
+            int month = 0;
+
             ArrayList month_list = new ArrayList();
             month_list.Add("January");
             month_list.Add("February");
@@ -531,8 +603,8 @@ namespace Multicare_pharmacy
             month_list.Add("November");
             month_list.Add("December");
 
-            
-             
+
+
             for (int i = 1; i < month_list.Count; i++)
             {
                 if ((string)month_list[i] == months)
@@ -542,7 +614,7 @@ namespace Multicare_pharmacy
             }
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" +year + "' ", con);
+            SqlCommand cmd = new SqlCommand("Exec calculate_profit '" + month + "','" + year + "' ", con);
             cmd.ExecuteNonQuery();
             report1 report1 = new report1();
             report1.Show();
@@ -559,9 +631,10 @@ namespace Multicare_pharmacy
         private void dgv_cellclick(object sender, DataGridViewCellEventArgs e)
         {
             int rowIndex = dataGridView1.CurrentCell.RowIndex;
+            Console.WriteLine(dataGridView1.RowCount);
             comboBox4.Text = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
             textBox25.Text = dataGridView1.Rows[rowIndex].Cells[1].Value.ToString();
-            textBox24.Text= (string)dataGridView1.Rows[rowIndex].Cells[2].Value;
+            textBox24.Text = dataGridView1.Rows[rowIndex].Cells[2].Value.ToString();
             textBox23.Text = dataGridView1.Rows[rowIndex].Cells[3].Value.ToString();
             textBox22.Text = dataGridView1.Rows[rowIndex].Cells[4].Value.ToString();
             textBox21.Text = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
@@ -587,7 +660,7 @@ namespace Multicare_pharmacy
 
         private void pName_changed(object sender, EventArgs e)
         {
-           
+
             DataView dv1 = pname_change.DefaultView;
             dv1.RowFilter = "ProductName LIKE '" + textBox33.Text + "%'";
             dataGridView3.DataSource = dv1;
@@ -608,7 +681,7 @@ namespace Multicare_pharmacy
             comboBox6.Text = dataGridView3.Rows[rowIndex].Cells[7].Value.ToString();
             textBox28.Text = dataGridView3.Rows[rowIndex].Cells[8].Value.ToString();
             textBox27.Text = dataGridView3.Rows[rowIndex].Cells[9].Value.ToString();
-            comboBox5.Text= dataGridView3.Rows[rowIndex].Cells[10].Value.ToString();
+            comboBox5.Text = dataGridView3.Rows[rowIndex].Cells[10].Value.ToString();
         }
 
         private void pName_Changed(object sender, EventArgs e)
@@ -637,7 +710,7 @@ namespace Multicare_pharmacy
             int rowIndex = dataGridView5.CurrentCell.RowIndex;
             comboBox9.Text = dataGridView5.Rows[rowIndex].Cells[0].Value.ToString();
             textBox35.Text = dataGridView5.Rows[rowIndex].Cells[1].Value.ToString();
-           // textBox34.Text = dataGridView5.Rows[rowIndex].Cells[2].Value.ToString();
+            // textBox34.Text = dataGridView5.Rows[rowIndex].Cells[2].Value.ToString();
         }
     }
 }

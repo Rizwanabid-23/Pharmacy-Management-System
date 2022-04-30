@@ -31,20 +31,20 @@ namespace Multicare_pharmacy
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admins));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -299,11 +299,11 @@ namespace Multicare_pharmacy
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges15;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges1;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -389,11 +389,11 @@ namespace Multicare_pharmacy
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges16;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges2;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -682,11 +682,11 @@ namespace Multicare_pharmacy
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges17.BottomLeft = true;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = true;
-            borderEdges17.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges17;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges3;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -772,11 +772,11 @@ namespace Multicare_pharmacy
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges18.BottomLeft = true;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = true;
-            borderEdges18.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges18;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges4;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1177,11 +1177,11 @@ namespace Multicare_pharmacy
             this.bunifuButton6.ColorContrastOnClick = 45;
             this.bunifuButton6.ColorContrastOnHover = 45;
             this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges19.BottomLeft = true;
-            borderEdges19.BottomRight = true;
-            borderEdges19.TopLeft = true;
-            borderEdges19.TopRight = true;
-            this.bunifuButton6.CustomizableEdges = borderEdges19;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.bunifuButton6.CustomizableEdges = borderEdges5;
             this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1463,7 +1463,7 @@ namespace Multicare_pharmacy
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 89);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 136);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(262, 166);
@@ -1505,11 +1505,11 @@ namespace Multicare_pharmacy
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges20.BottomLeft = true;
-            borderEdges20.BottomRight = true;
-            borderEdges20.TopLeft = true;
-            borderEdges20.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges20;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges6;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1720,14 +1720,14 @@ namespace Multicare_pharmacy
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(36, 333);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
+            this.button1.Size = new System.Drawing.Size(99, 30);
             this.button1.TabIndex = 21;
             this.button1.Text = "Sign out";
             this.button1.UseVisualStyleBackColor = false;
@@ -1735,15 +1735,15 @@ namespace Multicare_pharmacy
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(36, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 36);
+            this.button2.Size = new System.Drawing.Size(99, 36);
             this.button2.TabIndex = 22;
             this.button2.Text = "Add new Employee";
             this.button2.UseVisualStyleBackColor = false;
@@ -1751,14 +1751,14 @@ namespace Multicare_pharmacy
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(36, 137);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 27);
+            this.button3.Size = new System.Drawing.Size(99, 27);
             this.button3.TabIndex = 23;
             this.button3.Text = "Add new Product";
             this.button3.UseVisualStyleBackColor = false;
@@ -1766,14 +1766,14 @@ namespace Multicare_pharmacy
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(36, 45);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 36);
+            this.button4.Size = new System.Drawing.Size(99, 36);
             this.button4.TabIndex = 24;
             this.button4.Text = "Edit Employee details";
             this.button4.UseVisualStyleBackColor = false;
@@ -1781,14 +1781,14 @@ namespace Multicare_pharmacy
             // 
             // button5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(36, 170);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 36);
+            this.button5.Size = new System.Drawing.Size(99, 36);
             this.button5.TabIndex = 25;
             this.button5.Text = "Edit Product details";
             this.button5.UseVisualStyleBackColor = false;
@@ -1796,14 +1796,14 @@ namespace Multicare_pharmacy
             // 
             // button6
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(36, 87);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 36);
+            this.button6.Size = new System.Drawing.Size(99, 36);
             this.button6.TabIndex = 26;
             this.button6.Text = "Remove Employee";
             this.button6.UseVisualStyleBackColor = false;
@@ -1811,14 +1811,14 @@ namespace Multicare_pharmacy
             // 
             // button7
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(36, 212);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 27);
+            this.button7.Size = new System.Drawing.Size(99, 27);
             this.button7.TabIndex = 27;
             this.button7.Text = "Remove Products";
             this.button7.UseVisualStyleBackColor = false;
@@ -1834,14 +1834,14 @@ namespace Multicare_pharmacy
             // 
             // button8
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(36, 254);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(100, 28);
+            this.button8.Size = new System.Drawing.Size(99, 28);
             this.button8.TabIndex = 29;
             this.button8.Text = "Add Stock";
             this.button8.UseVisualStyleBackColor = false;
@@ -1910,11 +1910,11 @@ namespace Multicare_pharmacy
             this.bunifuButton7.ColorContrastOnClick = 45;
             this.bunifuButton7.ColorContrastOnHover = 45;
             this.bunifuButton7.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges21.BottomLeft = true;
-            borderEdges21.BottomRight = true;
-            borderEdges21.TopLeft = true;
-            borderEdges21.TopRight = true;
-            this.bunifuButton7.CustomizableEdges = borderEdges21;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuButton7.CustomizableEdges = borderEdges7;
             this.bunifuButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2059,11 +2059,11 @@ namespace Multicare_pharmacy
             this.bunifuButton13.ColorContrastOnClick = 45;
             this.bunifuButton13.ColorContrastOnHover = 45;
             this.bunifuButton13.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges22.BottomLeft = true;
-            borderEdges22.BottomRight = true;
-            borderEdges22.TopLeft = true;
-            borderEdges22.TopRight = true;
-            this.bunifuButton13.CustomizableEdges = borderEdges22;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.bunifuButton13.CustomizableEdges = borderEdges8;
             this.bunifuButton13.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton13.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton13.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2159,11 +2159,11 @@ namespace Multicare_pharmacy
             this.bunifuButton12.ColorContrastOnClick = 45;
             this.bunifuButton12.ColorContrastOnHover = 45;
             this.bunifuButton12.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges23.BottomLeft = true;
-            borderEdges23.BottomRight = true;
-            borderEdges23.TopLeft = true;
-            borderEdges23.TopRight = true;
-            this.bunifuButton12.CustomizableEdges = borderEdges23;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.bunifuButton12.CustomizableEdges = borderEdges9;
             this.bunifuButton12.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton12.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton12.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2259,11 +2259,11 @@ namespace Multicare_pharmacy
             this.bunifuButton11.ColorContrastOnClick = 45;
             this.bunifuButton11.ColorContrastOnHover = 45;
             this.bunifuButton11.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges24.BottomLeft = true;
-            borderEdges24.BottomRight = true;
-            borderEdges24.TopLeft = true;
-            borderEdges24.TopRight = true;
-            this.bunifuButton11.CustomizableEdges = borderEdges24;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.bunifuButton11.CustomizableEdges = borderEdges10;
             this.bunifuButton11.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton11.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton11.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2359,11 +2359,11 @@ namespace Multicare_pharmacy
             this.bunifuButton10.ColorContrastOnClick = 45;
             this.bunifuButton10.ColorContrastOnHover = 45;
             this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges25.BottomLeft = true;
-            borderEdges25.BottomRight = true;
-            borderEdges25.TopLeft = true;
-            borderEdges25.TopRight = true;
-            this.bunifuButton10.CustomizableEdges = borderEdges25;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.bunifuButton10.CustomizableEdges = borderEdges11;
             this.bunifuButton10.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2492,7 +2492,7 @@ namespace Multicare_pharmacy
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.80952F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.19048F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.button7, 1, 6);
@@ -2525,14 +2525,14 @@ namespace Multicare_pharmacy
             // 
             // button9
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Location = new System.Drawing.Point(36, 288);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 29);
+            this.button9.Size = new System.Drawing.Size(99, 29);
             this.button9.TabIndex = 30;
             this.button9.Text = "Reports";
             this.button9.UseVisualStyleBackColor = false;
@@ -2600,11 +2600,11 @@ namespace Multicare_pharmacy
             this.bunifuButton8.ColorContrastOnClick = 45;
             this.bunifuButton8.ColorContrastOnHover = 45;
             this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges26.BottomLeft = true;
-            borderEdges26.BottomRight = true;
-            borderEdges26.TopLeft = true;
-            borderEdges26.TopRight = true;
-            this.bunifuButton8.CustomizableEdges = borderEdges26;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.bunifuButton8.CustomizableEdges = borderEdges12;
             this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2753,11 +2753,11 @@ namespace Multicare_pharmacy
             this.bunifuButton9.ColorContrastOnClick = 45;
             this.bunifuButton9.ColorContrastOnHover = 45;
             this.bunifuButton9.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges27.BottomLeft = true;
-            borderEdges27.BottomRight = true;
-            borderEdges27.TopLeft = true;
-            borderEdges27.TopRight = true;
-            this.bunifuButton9.CustomizableEdges = borderEdges27;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.bunifuButton9.CustomizableEdges = borderEdges13;
             this.bunifuButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton9.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2887,11 +2887,11 @@ namespace Multicare_pharmacy
             this.bunifuButton14.ColorContrastOnClick = 45;
             this.bunifuButton14.ColorContrastOnHover = 45;
             this.bunifuButton14.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges28.BottomLeft = true;
-            borderEdges28.BottomRight = true;
-            borderEdges28.TopLeft = true;
-            borderEdges28.TopRight = true;
-            this.bunifuButton14.CustomizableEdges = borderEdges28;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.bunifuButton14.CustomizableEdges = borderEdges14;
             this.bunifuButton14.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton14.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton14.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
